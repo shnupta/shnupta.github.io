@@ -52,6 +52,11 @@ div.post p {
         font-size: 24px;
 }
 
+div.post p.date {
+        font-size: 18px;
+        color: #888;
+}
+
 div.title {
         font-family: monospace;
         margin: auto;
