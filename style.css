@@ -1,0 +1,67 @@
+body {
+        margin-left: 10%;
+        margin-right: 10%;
+}
+
+#content {
+        font-family: monospace;
+        color: #666;
+}
+
+div.post a.full-post-link {
+        text-decoration: underline;
+        text-decoration-style: dashed;
+}
+
+div.post {
+        margin: auto;
+        background-color: #eee;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
+div.post ul li {
+        font-family: monospace;
+        font-size: 20px;
+        font-style: oblique;
+}
+
+div.post a {
+        text-decoration: none;
+}
+
+div.post img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+}
+
+div.post h2 {
+        color: #555;
+        font-size: 40px;
+}
+
+div.post p {
+        text-align: justify;
+        color: #666;
+        font-size: 24px;
+}
+
+div.title {
+        font-family: monospace;
+        margin: auto;
+}
+
+div.title h1 {
+        font-size: 66px;
+}
+
+div.title h1 a {
+        text-decoration: none;
+        color: #333;
+}

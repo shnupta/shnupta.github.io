@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <title>bric - shnupta</title>
+</head>
+<body>
+        <div class="title">
+                <h1><a href="../../index.html">shnupta</a></h1>
+        </div>
+
+        <div id="content">
+                <div class="post">
+                        <a href="bric.html">
+                                <h2>bric - text editor</h2>
+                        </a>
+
+                        <img src="screencast.gif" />
+                        <p>
+                                <br />
+                                This past week I've spent taking a small text editor made by antirez, adapting it and adding new features.<br />
+                                <br />
+                                <a href="https://github.com/shnupta/bric" target="_blank">bric text editor</a><br />
+
+                                <br />
+                                The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the <i>"alternate screen buffer"</i>, which originated in <code>xterm</code> but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this
+                                functionality for full-screen terminal programs. In normal operation,
+                                output gets added to the scrollback buffer (and most terminals let the
+                                user scroll back to previous lines). Switching to the alternate screen
+                                buffer the scrollback buffer is left alone, and alternate screen buffer
+                                output is not added to the scrollback buffer. When returning from
+                                alternate screen buffer, the original scrollback buffer state is
+                                restored. This is what full-screen applications like <code>nano</code> use.<br />
+                                <br />
+                                The original editor&nbsp;<a href="https://github.com/antirez/kilo" target="_blank">kilo</a> was written over a weekend by Salvatore Sanfilippo. You can read his <a href="http://antirez.com/news/108" target="_blank">blogpost</a> on his site.<br />
+                                <br />
+                                I've taken the base of the kilo editor and have started to modularise it into different components and features (like syntax highlighting and git integration). So far I've added more in-depth syntax highlighting (needs to be fixed first though hah) and a goto function to make navigating the file easier.<br />
+                                <br />
+                                Some of the planned features are:<br />
+                                <ul>
+                                        <li>Git integration</li>
+                                        <li>More syntax keyword colours</li>
+                                        <li>More language syntax highlighting</li>
+                                        <li>More shortcuts</li>
+                                        <li>Yank &amp; paste lines</li>
+                                        <li>Append to end of line</li>
+                                        <li>Jump to beginning of line</li>
+                                        <li>Soft/hard wrap lines</li>
+                                        <li>Auto indent</li>
+                                        <li>Line numbers</li>
+                                        <li>Config file rather than hard coded colours etc </li>
+                                </ul>
+                        </p>
+                        <p>
+                                I will continue to add more features and hopefully get more of the open source community involved, but for the moment I think having this little editor is definitely useful and quite cool really.
+                        </p>
+
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                this.page.url = "https://shnupta.github.io/posts/o/bric.html";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "posts/0/bric"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://shnupta.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+        <script id="dsq-count-scr" src="//shnupta.disqus.com/count.js" async></script>
+</body>
