@@ -3,6 +3,13 @@ body {
         margin-right: 10%;
 }
 
+code {
+        background:#F8F8FF;
+        border:black dashed 1px;
+        padding:3px;
+        color: red;
+}​
+
 #content {
         font-family: monospace;
         color: #666;

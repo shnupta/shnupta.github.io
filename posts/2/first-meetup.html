@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <title>My first meetup - shnupta</title>
+</head>
+<body>
+        <div class="title">
+                <h1><a href="../../index.html">shnupta</a></h1>
+        </div>
+
+        <div id="content">
+                <div class="post">
+                        <p class="date">13/04/17</p>
+                        <a href="first-meetup.html">
+                                <h2>My first software meetup</h2>
+                        </a>
+
+                        <p>
+                                So this evening I attended my first software developers meetup in my local town - Taunton.
+                                <br/>The talk was titled 'An Introduction to Xamarin Forms' and was presented by Martin Rock-Evans a lead software developer at UKHO.
+                                <br/><br/>
+                                A couple weeks back I saw the new <a href="https://www.youtube.com/watch?v=afvT1c1ii0c" target="_blank">Github advert</a> which made me think about attending a hackathon.
+                                So I looked around online to find some local hackathons but all I found was yearly events that I had already missed, or groups in far, far away London town. The closest thing I could find was the Taunton (and area) Developers Meetup on <a href="https://meetup.com/" target="_blank">meetup.com</a>.
+                                Luckily, the next event was only in a couple of weeks so I joined the group, checked if it all okay for me to attend and so I went along.
+                                <br/><br/>
+                                Me and my friend Will caught the train over to Taunton, grabbed a coffee and made our way over to the venue. Martin started by giving us a run through of the basic capabilities of Xamarin and the idea behind it (one single C# shared code-base) and some of the features it had.
+                                He quickly made up a small demo app with a ListView and some other small components. What I was comparing Xamarin to was <a href="https://fusetools.com" target="_blank">Fuse</a>. Fuse is a cross-platform app development tool that I have been using on and off for about a year now, and it's excellent.
+                                <br/><br/>
+                                There were lots of similarities between Xamarin and Fuse that I didn't expect at first, almost all of the UI layout and even different class names and the syntax for MVVM (Model View View Model) components was very similar. They both use their own take on an XML based UI layout, Fuse's being called UX and Xamarin's called XAML. Their MVVM components were both called Observables (pretty much) and to bind to back end code both used similar syntax
+                                <code>Value="{variable}"</code> for Fuse and <code>Value="{Binding variable}"</code> for Xamarin. The biggest thing I seemed to notice was the amount of excess code needed for the base of an application in Xamarin. Using C# as the whole backend obviously means you must have you full Main class to begin with where as in Fuse you can just start with a UX file only and have a running app. What's more, Fuse doesn't depend on the whole .NET backend. When being installed on a device Xamarin installs the .NET binary alongside the code base binary that you have written. When in Fuse (as far as I know), their in-house compiler accesses the native APIs directly - although don't quote me on this as I remember Martin saying something about direct API access with Xamarin but I can't quite remember if that was through the .NET binary or straight to the device APIs. In general I like Fuse because of their progressive startup nature (just my opinion) and the way that they allow their customers much easier app development all-round, even more so than Xamarin I think.
+                                <br/><br/>
+                                On the contrary there are a few things that may side you with Xamarin: the fact that it is now owned by Microsoft obviously means that the development will be very very fast in comparison with Fuse and will have a lot more native SDKs available for you to use. However it's not too hard for you to use foreign code SDKs in Fuse at all, many members of the community have implemented SDKs such as Firebase, SQLite and others. So make your own  decision.
+                                <br/><br/>
+                                At the end of it all, I really enjoyed being around people with the same interest as me. It's not often I get to chat with other programmers so it was really refreshing and hopefully I've made some connections that will help me in the future! So thank you very much Martin for the talk, Jonn and Ewen for organising the Meetup group and everyone else who came along to make it possible - I look forward to the next one!
+                        </p>
+
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                this.page.url = "https://shnupta.github.io/posts/2/first-meetup.html";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "posts/2/first-meetup"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://shnupta.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+        <script id="dsq-count-scr" src="//shnupta.disqus.com/count.js" async></script>
+</body>
