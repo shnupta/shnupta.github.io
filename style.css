@@ -5,10 +5,10 @@ body {
 
 code {
         background:#F8F8FF;
-        border:black dashed 1px;
+        border:black 1px;
         padding:3px;
-        color: red;
 }​
+
 
 #content {
         font-family: monospace;
