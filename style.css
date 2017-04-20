@@ -3,6 +3,11 @@ body {
         margin-right: 10%;
 }
 
+iframe {
+        display: block;
+        margin: auto;
+}
+
 code {
         background-color: #dddddf;
         padding: 1px 4px;
