@@ -3,3 +3,4 @@
 2: first-meetup
 3: socialnetworkwatch
 4: eater8
+5: rustnightlynotifier
