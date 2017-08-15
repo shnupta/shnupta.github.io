@@ -4,3 +4,5 @@
 3: socialnetworkwatch
 4: eater8
 5: rustnightlynotifier
+6: codinginterviewuniversity
+7: bigonotation
