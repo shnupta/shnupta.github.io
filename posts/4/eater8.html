@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../../style.css"> <!--FIX-->
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <title>Eater8 - shnupta</title>
+</head>
+<body>
+        <div class="title">
+                <h1><a href="../../index.html">shnupta</a></h1> <!--FIX-->
+        </div>
+
+        <div id="content">
+                <div class="post">
+                        <p class="date">20/04/17</p>
+                        <a href="eater8.html">
+                                <h2>Eater8</h2>
+                        </a>
+
+                        <p>
+                                The other day I was browsing on reddit (as you do) and came across <a href="https://www.reddit.com/r/compsci/comments/64277x/what_are_your_outside_of_work_compsci_related/" target="_blank">a post</a> on r/compsci
+                                that was asking what are people's out of work hobbies. Someone commented that they were following <a href="https://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA" target="_blank">Ben Eater's</a> videos on building an 8-bit breadboard computer.
+                                <br/><br/>
+                                I visited his channel and watched a few videos until I stumbled across one where he <a href="https://www.youtube.com/watch?v=9PPrrSyubG0" target="_blank">programs the computer.</a> This got me thinking...</br>
+                                I should write a little emulator of Ben's computer and see if I can create some interesting programs on it.
+                                <br/><br/>
+                                So in about 30 minutes I modelled the computer's basic architecture (RAM, registers, program counter, etc.). Ben's computer had two registers - A and B. Each of those hold 8 bits so I modelled them with <code class="prettyprint">uint8_t A;</code> and the same for register B.
+                                <br/><br/>
+                                I wasn't sure of the exact size of RAM (I will get in touch with Ben sometime to get the correct details) but I just left it as 512 bytes of RAM by using a <code class="prettyprint">uint8_t RAM[512];</code>
+                                <br/><br/>
+                                Finally I would need a program counter to point to the memory adresses in RAM and also a current opcode to decode - both of which I just modelled similarly to the A and B registers. I also used a <code class="prettyprint">bool halt;</code> that would be set to true when the halt opcode is called, as well as an <code class="prettyprint">int out;</code> for the output of the program.
+                                <br/><br/>
+                                In Ben's video he briefly shows some of opcodes he has made for the computer. These opcodes are in binary which makes them slightly harder to read but nonetheless there were only about 3 opcodes actually needed for this program he was creating.
+                                <br/><br/>
+                                What he programmed was a simple addition program that loaded a number into the A register (opcode LDA - 0001xxxx where xxxx is the memory address of the value to load into A), then add a number to the value in the a register (opcode ADD - 0010xxxx where xxxx is the memory address of the value to add to the A register) and then finally output the value in the A register (opcode OUT - 01010000).
+                                <br/><br/>
+                                All that I have emulated so far is this exact program that Ben made in the video but when I get time I will contact Ben, model the computer correctly and also complete the instruction set. And then I will allow the user to load binary files into the emulator that will then be able to run programs designed specifically for it.
+                                <br/><br/>
+                                Here is my <a href="https://github.com/shnupta/eater8" target="_blank">Github repo</a> containing the code. Feel free to submit a PR! And here is Ben's video:
+                                <br/><br/>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/9PPrrSyubG0" frameborder="0" allowfullscreen></iframe>
+
+                        </p>
+
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+
+
+                //      FIX BELOW!!!!
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                this.page.url = "https://shnupta.github.io/posts/4/eater8.html";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "posts/4/eater8"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://shnupta.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+        <script id="dsq-count-scr" src="//shnupta.disqus.com/count.js" async></script>
+</body>

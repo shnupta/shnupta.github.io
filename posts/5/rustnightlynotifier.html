@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../../style.css"> <!--FIX-->
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <title>RustNightlyNotifier - shnupta</title>
+</head>
+<body>
+        <div class="title">
+                <h1><a href="../../index.html">shnupta</a></h1> <!--FIX-->
+        </div>
+
+        <div id="content">
+                <div class="post">
+                        <p class="date">16/05/17</p>
+                        <a href="rustnightlynotifier.html">
+                                <h2>RustNightlyNotifier</h2>
+                        </a>
+
+                        <p>
+                                I was on Twitter the other day (<a target="_blank" href="https://twitter.com/casey__williams">@casey__williams</a>) when I came across a retweet by <a target="_blank" href="https://twitter.com/rustlang">@rustlang</a> of a tweet asking if someone could build a Twitter bot that posted when a new nightly build was released.
+                                I had thought of making a Twitter bot before but never had a reason to, until now...
+                                <br/><br/>
+                                A quick google search found me a python module that ties to the Twitter API - called tweepy. I installed the module and created a new application on dev.twitter.com
+                                <br/><br/>
+                                It was super quick and simple to set up (+1 to tweepy and the Twitter API team) and so within 20 minutes a prototype was functioning, although posting from my own personal account. All it was doing at the moment was checking the cargo.toml file on the rust site and searching for the <code class="prettyprint">[rustc.nightly]</code> item, getting the commit hash with a little regex and then comparing to see if it was the one already stored locally in a text file.
+                                If it wasn't, then voila! A new nightly had been released so lets <code class="prettyprint">api.update_status()</code> and post a tweet. Currently the bot isn't using anything asynchronous to wait for the cargo.toml to update as Python2.7 doesn't have a quick module for this. After exams I might write a little module to make the code nicer and to more correct standards.
+                                <br/><br/>
+                                The final thing I did was just compare the old nightly build with the new one by adding a link to the comparison page on github of those two commits.
+                                <br/><br/>
+                                The bot's twitter handle is <a target="_blank" href="https://twitter.com/RustNightly">@RustNightly</a> so go ahead and follow to stay up to date with the latest Rust nightly builds! Also the code is available here on <a target="_blank" href="https://github.com/shnupta/RustNightlyNotifier">my github.</a>
+                                <br/><br/>
+                                <a style="{margin-left: 20px; margin-right: 20px;}" class="twitter-timeline" data-theme="dark" href="https://twitter.com/RustNightly">Tweets by RustNightly</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>                        </p>
+
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+
+
+                //      FIX BELOW!!!!
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                var disqus_config = function () {
+                this.page.url = "https://shnupta.github.io/posts/6/rustnightlynotifier.html";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "posts/6/rustnightlynotifier"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://shnupta.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+        <script id="dsq-count-scr" src="//shnupta.disqus.com/count.js" async></script>
+</body>
