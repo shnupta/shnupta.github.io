@@ -2509,6 +2509,20 @@
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
 		}
+		
+		.image.avatar {
+			border-radius: 100%;
+		}
+
+			.image.
+			:before {
+				display: none;
+			}
+
+			.image.avatar img {
+				border-radius: 100%;
+				width: 100%;
+			}
 
 /* List */
 
@@ -2722,6 +2736,11 @@
 
 	header {
 		cursor: default;
+	}
+	
+	#intro .image.avatar {
+		margin: 0 0 1em 0;
+		width: 10em;
 	}
 
 		header > .date {
