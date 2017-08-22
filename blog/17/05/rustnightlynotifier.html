@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RustNightlyNotifier - shnupta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../../index.html" class="logo">shnupta</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="../../../index.html">Home</a></li>
+							<li><a href="../../../aboutme.html">About Me</a></li>
+							<li><a href="../../../projects.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a target="_blank" href="https://twitter.com/casey__williams" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/williamshoops96" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/williamshoops96" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a target="_blank" href="https://github.com/shnupta" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a target="_blank" href="https://linkedin.com/in/casey-williams/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">16 May, 2017</span>
+									<h1>RustNightlyNotifier</h1>
+									<p>I was on Twitter the other day (<a target="_blank" href="https://twitter.com/casey__williams">@casey__williams</a>) when I came across a retweet by <a target="_blank" href="https://twitter.com/rustlang">@rustlang</a> of a tweet asking if someone could build a Twitter bot that posted when a new nightly build was released.
+										I had thought of making a Twitter bot before but never had a reason to, until now...</p>
+								</header>
+								A quick google search found me a python module that ties to the Twitter API - called tweepy. I installed the module and created a new application on dev.twitter.com
+                                <br/><br/>
+                                It was super quick and simple to set up (+1 to tweepy and the Twitter API team) and so within 20 minutes a prototype was functioning, although posting from my own personal account. All it was doing at the moment was checking the cargo.toml file on the rust site and searching for the <code class="prettyprint">[rustc.nightly]</code> item, getting the commit hash with a little regex and then comparing to see if it was the one already stored locally in a text file.
+                                If it wasn't, then voila! A new nightly had been released so lets <code class="prettyprint">api.update_status()</code> and post a tweet. Currently the bot isn't using anything asynchronous to wait for the cargo.toml to update as Python2.7 doesn't have a quick module for this. After exams I might write a little module to make the code nicer and to more correct standards.
+                                <br/><br/>
+                                The final thing I did was just compare the old nightly build with the new one by adding a link to the comparison page on github of those two commits.
+                                <br/><br/>
+                                The bot's twitter handle is <a target="_blank" href="https://twitter.com/RustNightly">@RustNightly</a> so go ahead and follow to stay up to date with the latest Rust nightly builds! Also the code is available here on <a target="_blank" href="https://github.com/shnupta/RustNightlyNotifier">my github.</a>
+                                <br/><br/>
+                                <a style="{margin-left: 20px; margin-right: 20px;}" class="twitter-timeline" data-theme="dark" href="https://twitter.com/RustNightly">Tweets by RustNightly</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>                        </p>
+								
+									<div id="disqus_thread"></div>
+										<script>
+						
+						
+										//      FIX BELOW!!!!
+						
+										/**
+										*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+										*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+						
+										var disqus_config = function () {
+										this.page.url = "https://shnupta.github.io/blog/posts/16.05.17/rustnightlynotifier.html";  // Replace PAGE_URL with your page's canonical URL variable
+										this.page.identifier = "16.05.17/rustnightlynotifier"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+										};
+						
+										(function() { // DON'T EDIT BELOW THIS LINE
+										var d = document, s = d.createElement('script');
+										s.src = 'https://shnupta.disqus.com/embed.js';
+										s.setAttribute('data-timestamp', +new Date());
+										(d.head || d.body).appendChild(s);
+										})();
+										</script>
+										<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							
+									</div>
+									<script id="dsq-count-scr" src="//shnupta.disqus.com/count.js" async></script>
+					
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Area</h3>
+								<p>Somerset</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>07477895503</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:williamshoops96@gmail.com">williamshoops96@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+										<li><a target="_blank" href="https://twitter.com/casey__williams" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a target="_blank" href="https://www.facebook.com/williamshoops96" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a target="_blank" href="https://www.instagram.com/williamshoops96" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a target="_blank" href="https://github.com/shnupta" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a target="_blank" href="https://linkedin.com/in/casey-williams/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Casey Williams</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../../assets/js/skel.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>

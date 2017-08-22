@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>bric - shnupta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../../../index.html" class="logo">shnupta</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="../../../index.html">Home</a></li>
+							<li><a href="../../../aboutme.html">About Me</a></li>
+							<li><a href="../../../projects.html">Projects</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a target="_blank" href="https://twitter.com/casey__williams" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/williamshoops96" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/williamshoops96" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a target="_blank" href="https://github.com/shnupta" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a target="_blank" href="https://linkedin.com/in/casey-williams/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">10 April, 2017</span>
+									<h1>bric - text editor</h1>
+									<p>This past week I've spent taking a small text editor made by antirez, adapting it and adding new features.</p>
+								</header>
+								<div class="image main"><img class="image fit" src="screencast.gif" alt="" /></div>
+								The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the <i>"alternate screen buffer"</i>, which originated in <code>xterm</code> but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this
+                                functionality for full-screen terminal programs. In normal operation,
+                                output gets added to the scrollback buffer (and most terminals let the
+                                user scroll back to previous lines). Switching to the alternate screen
+                                buffer the scrollback buffer is left alone, and alternate screen buffer
+                                output is not added to the scrollback buffer. When returning from
+                                alternate screen buffer, the original scrollback buffer state is
+                                restored. This is what full-screen applications like <code>nano</code> use.<br />
+                                <br />
+                                The original editor&nbsp;<a href="https://github.com/antirez/kilo" target="_blank">kilo</a> was written over a weekend by Salvatore Sanfilippo. You can read his <a href="http://antirez.com/news/108" target="_blank">blogpost</a> on his site.<br />
+                                <br />
+                                I've taken the base of the kilo editor and have started to modularise it into different components and features (like syntax highlighting and git integration). So far I've added more in-depth syntax highlighting (needs to be fixed first though hah) and a goto function to make navigating the file easier.<br />
+                                <br />
+                                Some of the planned features are:<br />
+                                <ul>
+                                        <li>Git integration</li>
+                                        <li>More syntax keyword colours</li>
+                                        <li>More language syntax highlighting</li>
+                                        <li>More shortcuts</li>
+                                        <li>Yank &amp; paste lines</li>
+                                        <li>Append to end of line</li>
+                                        <li>Jump to beginning of line</li>
+                                        <li>Soft/hard wrap lines</li>
+                                        <li>Auto indent</li>
+                                        <li>Line numbers</li>
+                                        <li>Config file rather than hard coded colours etc </li>
+                                </ul>
+                        </p>
+                        <p>
+                                I will continue to add more features and hopefully get more of the open source community involved, but for the moment I think having this little editor is definitely useful and quite cool really.
+                        </p>
+							
+									<div id="disqus_thread"></div>
+										<script>
+						
+						
+										//      FIX BELOW!!!!
+						
+										/**
+										*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+										*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+						
+										var disqus_config = function () {
+										this.page.url = "https://shnupta.github.io/blog/posts/10.04.17/bric.html";  // Replace PAGE_URL with your page's canonical URL variable
+										this.page.identifier = "10.04.17/bric"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+										};
+						
+										(function() { // DON'T EDIT BELOW THIS LINE
+										var d = document, s = d.createElement('script');
+										s.src = 'https://shnupta.disqus.com/embed.js';
+										s.setAttribute('data-timestamp', +new Date());
+										(d.head || d.body).appendChild(s);
+										})();
+										</script>
+										<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							
+									</div>
+									<script id="dsq-count-scr" src="//shnupta.disqus.com/count.js" async></script>
+					
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Area</h3>
+								<p>Somerset</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p>07477895503</p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:williamshoops96@gmail.com">williamshoops96@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+										<li><a target="_blank" href="https://twitter.com/casey__williams" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a target="_blank" href="https://www.facebook.com/williamshoops96" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a target="_blank" href="https://www.instagram.com/williamshoops96" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a target="_blank" href="https://github.com/shnupta" class="icon fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a target="_blank" href="https://linkedin.com/in/casey-williams/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Casey Williams</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../../assets/js/jquery.min.js"></script>
+			<script src="../../../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../../../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../../../assets/js/skel.min.js"></script>
+			<script src="../../../assets/js/util.js"></script>
+			<script src="../../../assets/js/main.js"></script>
+
+	</body>
+</html>
