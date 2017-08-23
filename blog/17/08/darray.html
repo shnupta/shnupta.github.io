@@ -10,6 +10,7 @@
 		    <meta charset="utf-8" />
 		    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		    <link rel="stylesheet" href="../../../assets/css/main.css" />
+        <link rel ="stylesheet" href="../../../assets/css/styles/monokai.css"  />
 		    <noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -188,7 +189,7 @@ dynamic array is to push to the end of the array.</p>
 <p>We will get to the resizing of our array at the end of the tutorial. Here we are
 setting the item at the pointer location that is the index of <em>size</em> equal to
 the value of our pointer. Because we are using zero-based indexing, the element
-at position *size *is the next element at the end of our array. Finally we
+at position size is the next element at the end of our array. Finally we
 increment the size of the array.</p>
 <p>It’s all well and good slapping a value on the end, but sometimes we want to
 slot an item into the middle of the array and keep all of our other elements.
@@ -199,7 +200,7 @@ Here is where inserting comes in.</p>
         darray_resize(vec, vec-&gt;capacity * 2);
     }
     for (int i = vec-&gt;size - 1; i &gt;= index; i--) {
-        *(vec-&gt;items + sizeof(void *) * (i + 1)) = *(vec-&gt;items +        sizeof(void *) * i);
+        *(vec-&gt;items + sizeof(void *) * (i + 1)) = *(vec-&gt;items + sizeof(void *) * i);
     }
     *(vec-&gt;items + sizeof(void *) * index) = item;
     vec-&gt;size++;
@@ -246,7 +247,8 @@ element.</p>
     for (int i = index; i &lt; vec-&gt;size; i++) {
         *(vec-&gt;items + sizeof(void *) * i) = *(vec-&gt;items + sizeof(void *) * (i+1));
     }
-    vec-&gt;size--;}
+    vec-&gt;size--;
+}
 </code></pre>
 <p>Deleting an element in our array is similar to inserting. Only rather then
 shifting elements to the right before we insert, we shift elements left after
@@ -366,6 +368,8 @@ need any help, feel free to drop me an email.</p>
 
 		    <!-- Scripts -->
 			  <script src="../../../assets/js/jquery.min.js"></script>
+        <script src="../../../assets/js/highlight.pack.js" ></script>
+        <script>hljs.initHighlightingOnLoad();</script>
 			  <script src="../../../assets/js/jquery.scrollex.min.js"></script>
 			  <script src="../../../assets/js/jquery.scrolly.min.js"></script>
 			<script src="../../../assets/js/skel.min.js"></script>
