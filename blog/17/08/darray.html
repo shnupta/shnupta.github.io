@@ -88,8 +88,8 @@ automatically resizing array.</p>
 <h4><a id="What_should_it_be_able_to_do_45"></a>What should it be able to do?</h4>
 <p>Typically a dynamic array should be able to:</p>
 <ul>
-<li>Get(<strong>i</strong>): return the element at position **i **— O(1)</li>
-<li>Set(<strong>i</strong>, <strong>val</strong>): set the element at position **i **to the value <strong>val</strong></li>
+<li>Get(<strong>i</strong>): return the element at position i — O(1)</li>
+<li>Set(<strong>i</strong>, <strong>val</strong>): set the element at position i to the value <strong>val</strong></li>
 <li>Push(<strong>val</strong>): add <strong>val</strong> to the end of the array — typically O(1) but can<br>
 differ (see later)</li>
 <li>Remove(<strong>i</strong>): remove the element at position <strong>i</strong> — O(n)</li>
@@ -130,7 +130,7 @@ void darray_remove(darray*, void *);
 int darray_find(darray*, void *);
 void darray_resize(darray*, int);
 </code></pre>
-<p>*darray_init *will be our allocation function. Here the array will be created
+<p>darray_init will be our allocation function. Here the array will be created
 and the memory for it will be allocated.</p>
 <pre><code>void darray_init(darray *vec) {
     vec-&gt;capacity = DARRAY_INIT_CAPACITY;
@@ -140,16 +140,16 @@ and the memory for it will be allocated.</p>
 </code></pre>
 <p>First of all, we set the capacity of the vector to our initialisation capacity
 (which in this case is 16). Then we set the size to zero as our array contains
-no elements and finally we use* <strong><em>malloc()</em></strong> *to allocate some memory for our
+no elements and finally we use <strong><em>malloc()</em></strong> to allocate some memory for our
 items array. The <strong>malloc</strong>() function allocates the provided number of bytes of
 memory and returns a pointer to the allocated memory. Now we have some memory to
 play around with and use to store our data.</p>
-<p>The *darray_init_with_cap *is an optional function that I wrote to allow for a
+<p>The darray_init_with_cap is an optional function that I wrote to allow for a
 bit more freedom. You just pass in the capacity size rather than using the
 standard macro.</p>
-<p>Before we continue, we also need a way to clear up our *darray *when we are
-finished with it — we don’t want any memory leaks! Our *darray_destroy *function
-simply uses **free() **to deallocate the memory we allocated for *items *and
+<p>Before we continue, we also need a way to clear up our darray when we are
+finished with it — we don’t want any memory leaks! Our darray_destroy function
+simply uses free() to deallocate the memory we allocated for items and
 sets the <em>size</em> and <em>capacity</em> to NULL;</p>
 <p>The next few functions in the header file are pretty self explanatory. Return
 the size, capacity or 1 if the size is zero. You get the idea.</p>
@@ -170,7 +170,7 @@ access.</p>
 access actually exists in our array, if it doesn’t we don’t want to let the
 program continue as it could end up badly. To access the element we take the
 address of our array  and then add to that the number of bytes until the element
-that we want to access. We do this by using the **sizeof() **function which
+that we want to access. We do this by using the sizeof() function which
 returns the size in bytes of the argument we pass in, and we then times this by
 our index as that is how many bytes until our element begins. We then
 dereference this memory address which returns our void * element inside our
@@ -205,15 +205,15 @@ Here is where inserting comes in.</p>
     vec-&gt;size++;
 }
 </code></pre>
-<p>Once again we use the **assert() **statement to check the passed in <em>index</em> is<br>
-valid and also check if the array needs to be resized. Before we can actually<br>
-insert our value into the <em>index</em>, we need to make space for it. We cannot<br>
-simply change the value at the <em>index</em> as we’d be overwriting the existing<br>
-value. So what we do is loop from the last value of our array until we reach the<br>
-<em>index</em> we want to insert at, and copy that value to the index that is one<br>
-greater than it. We cannot loop from the <em>index</em> towards the end of the array as<br>
-we would just be copying the same value across each time. Once we’ve made the<br>
-space we set the value at the memory address of our <em>index</em>, like before. And<br>
+<p>Once again we use the assert() statement to check the passed in <em>index</em> is
+valid and also check if the array needs to be resized. Before we can actually
+insert our value into the <em>index</em>, we need to make space for it. We cannot
+simply change the value at the <em>index</em> as we’d be overwriting the existing
+value. So what we do is loop from the last value of our array until we reach the
+<em>index</em> we want to insert at, and copy that value to the index that is one
+greater than it. We cannot loop from the <em>index</em> towards the end of the array as
+we would just be copying the same value across each time. Once we’ve made the
+space we set the value at the memory address of our <em>index</em>, like before. And
 again we increment the size of the array.</p>
 <p>The  function simply uses the  function and passes zero as the index argument.</p>
 <pre><code>void* darray_pop(darray *vec) {
@@ -229,12 +229,12 @@ again we increment the size of the array.</p>
     return ret_val;
 }
 </code></pre>
-<p>Popping a value is deleting the last value from our array, and returning it. At<br>
-the beginning we do the normal validation check and resize check. Then we create<br>
-the  variable. This is a copy of the last element of our array (we need this to<br>
-be able to return the element after we delete it). Then we simply set the value<br>
-to be  at the address of the last element (which is  due to zero-based<br>
-indexing). Don’t forget to decrement the <em>size</em> of our array as we’ve deleted an<br>
+<p>Popping a value is deleting the last value from our array, and returning it. At
+the beginning we do the normal validation check and resize check. Then we create
+the  variable. This is a copy of the last element of our array (we need this to
+be able to return the element after we delete it). Then we simply set the value
+to be  at the address of the last element (which is  due to zero-based
+indexing). Don’t forget to decrement the <em>size</em> of our array as we’ve deleted an
 element.</p>
 <pre><code>void darray_delete(darray *vec, int index) {
     assert(index &gt; 0 &amp;&amp; index &lt; vec-&gt;size);
@@ -248,8 +248,8 @@ element.</p>
     }
     vec-&gt;size--;}
 </code></pre>
-<p>Deleting an element in our array is similar to inserting. Only rather then<br>
-shifting elements to the right before we insert, we shift elements left after<br>
+<p>Deleting an element in our array is similar to inserting. Only rather then
+shifting elements to the right before we insert, we shift elements left after
 deleting the item.</p>
 <pre><code>void darray_remove(darray *vec, void *item) {
     for(int i = 0; i &lt; vec-&gt;size; i++) {
@@ -259,8 +259,8 @@ deleting the item.</p>
     }
 }
 </code></pre>
-<p>Our remove function looks for any elements that have the value of *item *and<br>
-removes them from our array using the previous function. N.B. this will delete<br>
+<p>Our remove function looks for any elements that have the value of item and
+removes them from our array using the previous function. N.B. this will delete
 multiple occurrences and not just the first match.</p>
 <pre><code>int darray_find(darray *vec, void *item) {
     for(int i = 0; i &lt; vec-&gt;size; i++) {
@@ -271,8 +271,8 @@ multiple occurrences and not just the first match.</p>
     return -1;
 }
 </code></pre>
-<p>Our find function is very similar to our remove function. However on the first<br>
-occurrence of <em>item</em> it will return the index that it is at. If a match is not<br>
+<p>Our find function is very similar to our remove function. However on the first
+occurrence of <em>item</em> it will return the index that it is at. If a match is not
 found, -1 is returned.</p>
 <p>Now onto the most important function of them all!</p>
 <pre><code>void darray_resize(darray *vec, int new_size) {
@@ -284,16 +284,16 @@ found, -1 is returned.</p>
     vec-&gt;items = new_items;
 }
 </code></pre>
-<p>We have called this function multiple times (when deleting, inserting). First of<br>
-all we check the new size is valid. Then we change our array’s capacity property<br>
-to be the new size. After we allocate memory in a similar way to how we<br>
-initialised the array, this time with the new capacity. We then copy our<br>
-existing elements to our newly allocated memory, afterwards freeing the previous<br>
-array memory. Finally we set our array’s items collection to be the newly<br>
+<p>We have called this function multiple times (when deleting, inserting). First of
+all we check the new size is valid. Then we change our array’s capacity property
+to be the new size. After we allocate memory in a similar way to how we
+initialised the array, this time with the new capacity. We then copy our
+existing elements to our newly allocated memory, afterwards freeing the previous
+array memory. Finally we set our array’s items collection to be the newly
 allocated and assigned memory.</p>
 <hr>
-<p>Well that’s it! I hope you found this a bit of a no-nonsense, straight to the<br>
-point way of learning and got something from it. If you have any questions or<br>
+<p>Well that’s it! I hope you found this a bit of a no-nonsense, straight to the
+point way of learning and got something from it. If you have any questions or
 need any help, feel free to drop me an email.</p>
 
 									      <div id="disqus_thread"></div>
