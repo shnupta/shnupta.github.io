@@ -3,7 +3,7 @@
 blog_theme: dark # Or use dark
 name: Casey Williams
 paginate: 25
-url:  # add your site url (format: https://example.com)
+url: https://shnupta.github.io # add your site url (format: https://example.com)
 
 
 # Optional settings
