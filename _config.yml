@@ -3,7 +3,7 @@
 blog_theme: dark # Or use dark
 name: Casey Williams
 paginate: 25
-url: http://shnupta.github.io # add your site url (format: https://example.com)
+url:  # add your site url (format: https://example.com)
 
 
 # Optional settings
@@ -14,7 +14,7 @@ baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 discus_identifier: shnupta # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
-rss_enabled: true # Change to false if not
+rss_enabled: false # Change to false if not
 scrollappear_enabled: true # Change to false to disable
 social:
   dribbble: # Add your Dribbble handle
