@@ -1,4 +1,5 @@
 <nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+  <a href="{{ '/' | relative_url }}" >{% include avatar.html path="avatar.jpeg" path-detail="avatar.jpeg" alt="It's me!" %}</a>
   <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
   <ul class="header-links">
     {% if site.about_enabled == true %}
