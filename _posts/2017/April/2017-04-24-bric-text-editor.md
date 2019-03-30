@@ -5,13 +5,13 @@ description: "bric is an in terminal text editor"
 tags: [project]
 ---
 
-## bric - text editor
+# bric - text editor
 
 {% include image.html path="posts/2017/April/screencast.gif" path-detail="posts/2017/April/screencast.gif" %}
 
 This past week I've spent taking a small text editor made by antirez, adapting it and adding new features.  
 
-<a href="https://github.com/shnupta/bric" target="_blank" >bric text editor]</a>
+<a href="https://github.com/shnupta/bric" target="_blank" >bric text editor</a>
 
 The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the _"alternate screen buffer"_, which originated in `xterm` but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines). Switching to the alternate screen buffer the scrollback buffer is left alone, and alternate screen buffer output is not added to the scrollback buffer. When returning from alternate screen buffer, the original scrollback buffer state is restored. This is what full-screen applications like `nano` use.  
 
