@@ -10,6 +10,7 @@ Thumbs.db
 /_site/
 /.jekyll-cache/
 .bundle/
+vendor/
 Gemfile.lock
 package-lock.json
 yarn.lock
