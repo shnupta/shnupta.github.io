@@ -1,5 +1,15 @@
 <footer class="footer {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <p>
-    Template: <a href="https://github.com/nielsenramon/chalk" target="_blank">Chalk</a>
-  </p>
+  <ul class="header-links">
+    <li>
+        <a href="https://github.com/nielsenramon/chalk" rel="noreferrer noopener" target="_blank" title="Template">
+          {% include svg-icon.html icon="template" %}
+        </a>
+    </li>
+    <li>
+      <a href="{{ 'feed.xml' | relative_url }}" rel="noreferrer noopener" target="_blank" title="RSS">
+        {% include svg-icon.html icon="rss" %}
+      </a>
+    </li>
+  </ul>
+
 </footer>
