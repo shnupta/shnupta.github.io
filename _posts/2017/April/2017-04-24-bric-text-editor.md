@@ -7,7 +7,7 @@ tags: [project]
 
 # bric - text editor
 
-{% include image.html path="posts/2017/April/screencast.gif" path-detail="posts/2017/April/screencast.gif" %}
+{% include image.html path="posts/2017/April/screencast.gif" path-detail="posts/2017/April/screencast.gif" alt="Screencast of bric on macOS" %}
 
 This past week I've spent taking a small text editor made by antirez, adapting it and adding new features.  
 
