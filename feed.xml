@@ -1,20 +1,42 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Casey Williams</title>
+    <description></description>
+    <link>https://shnupta.github.io</link>
+    <atom:link href="https://shnupta.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>snacc app test</title>
+        <description>The walkthrough of my app and test plan for my Computer Science A level project.</description>
+        <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
+        <link>https://shnupta.github.io/posts/snacc-app-test</link>
+        <guid isPermaLink="true">https://shnupta.github.io/posts/snacc-app-test</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>STEP 1 2007 Q5</title>
+        <description>A quick workthrough of a STEP question I did.</description>
+        <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
+        <link>https://shnupta.github.io/posts/step-1-2007-q5</link>
+        <guid isPermaLink="true">https://shnupta.github.io/posts/step-1-2007-q5</guid>
+      </item>
+    
+      <item>
+        <title>Welcome</title>
+        <description>Hey everyone, welcome to my new site.</description>
+        <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+        <link>https://shnupta.github.io/posts/welcome-post</link>
+        <guid isPermaLink="true">https://shnupta.github.io/posts/welcome-post</guid>
+      </item>
+    
+      <item>
+        <title>bric text editor</title>
+        <description>bric is an in terminal text editor</description>
+        <pubDate>Mon, 24 Apr 2017 00:00:00 +0100</pubDate>
+        <link>https://shnupta.github.io/posts/bric-text-editor</link>
+        <guid isPermaLink="true">https://shnupta.github.io/posts/bric-text-editor</guid>
+      </item>
+    
   </channel>
 </rss>
