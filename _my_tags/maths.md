@@ -1,4 +1,0 @@
----
-slug: maths
-name: Maths
----
