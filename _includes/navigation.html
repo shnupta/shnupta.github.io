@@ -1,6 +1,8 @@
 <nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}">
   <a href="{{ '/' | relative_url }}" class="header-avatar" >{% include avatar.html path="avatar.jpeg" path-detail="avatar.jpeg" alt="It's me!" %}</a>
   <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <div class="header-subtitle-link-container">
+  <h6 class="header-subtitle">Development Intern at Sintelix</h6>
   <ul class="header-links">
     {% if site.about_enabled == true %}
       <li>
@@ -178,4 +180,5 @@
       </li>
     {% endif %}
   </ul>
+  </div>
 </nav>

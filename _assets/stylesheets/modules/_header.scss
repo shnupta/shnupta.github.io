@@ -17,10 +17,17 @@
   text-decoration: none;
 }
 
+.header-subtitle {
+  flex: 50%;
+}
+
+.header-subtitle-link-container {
+  display: flex;
+}
+
 .header-links {
-  float: right;
+  flex: 50%;
   padding: 0;
-  margin: 15px 0 0;
   list-style: none;
   li {
     display: inline-block;
@@ -51,6 +58,15 @@
 
   .header-avatar {
     display: inline-block;
+  }
+
+  .header-subtitle {
+    display: block;
+    margin: 0 0 15px 0;
+  }
+
+  .header-subtitle-link-container {
+    display: block;
   }
 
   .header-links {
