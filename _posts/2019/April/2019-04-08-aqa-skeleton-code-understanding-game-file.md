@@ -10,7 +10,12 @@ So I quickly whipped up a program that would dissemble the basics of the game fi
 
 You might find it useful to see how the files are structured or just as a lookup table for different items in the games.
 
+Just copy the code and paste it into a new project with the `.gme` files in the `bin/Debug` folder.
+
 <script src="https://gist.github.com/shnupta/285dbea19ba04414f7a7b610b0b84ee4.js"></script>
 
-Here are also some useful links for preparing for the skeleton code exam:
-- [Wikibooks skeleton program suggestions](https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Skeleton_program/2019#Add_'examine_room'_option_to_view_details_of_room_again)
+Here is also a useful link for preparing for the skeleton code exam:
+- <a href="https://en.wikibooks.org/wiki/A-level_Computing/AQA/Paper_1/Skeleton_program/2019#Add_'examine_room'_option_to_view_details_of_room_again" target="_blank">Wikibooks skeleton program suggestions</a>
+
+P.S.
+The cool custom embedded gists are from <a href="https://codersblock.com/blog/customizing-github-gists/" target="_blank">here</a>.
