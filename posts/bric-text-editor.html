@@ -1,22 +1,23 @@
 <!doctype html>
 <html lang="en">
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Casey Williams | Tags</title>
-  <meta name="description" content="Tag cloud from all the posts">
+  <title>Casey Williams | bric text editor</title>
+  <meta name="description" content="bric is an in terminal text editor">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="Tags">
+  <meta property="og:title" content="bric text editor">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://shnupta.github.io/tags">
-  <meta property="og:description" content="Tag cloud from all the posts">
+  <meta property="og:url" content="https://shnupta.github.io/posts/bric-text-editor">
+  <meta property="og:description" content="bric is an in terminal text editor">
   <meta property="og:site_name" content="Casey Williams">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://shnupta.github.io/tags">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="Tag cloud from all the posts">
+  <meta name="twitter:url" content="https://shnupta.github.io/posts/bric-text-editor">
+  <meta name="twitter:title" content="bric text editor">
+  <meta name="twitter:description" content="bric is an in terminal text editor">
 
   
     <meta property="og:image" content="https://shnupta.github.io/assets/og-image-88f23697076f794208c5b0d1d9867b6376a7d86f2efdc45b59af2aa239d0720b.jpg">
@@ -153,131 +154,86 @@
   </div>
 </nav>
 
-        <div class="tags-page">
-  <h1 class="tags-page-header">
-    Tags
-  </h1>
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>bric text editor</h1>
+            <p>bric is an in terminal text editor</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                April 24, 2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <span class="article-list-minutes">
+                
+                
+                  2 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span>
+              <div class="article-list-tags">
+                
+                  <a href="/tag/project">project</a>
+                
+              </div>
+            </div>
+          </header>
 
-  
+          <div class="article-content">
+            <h1 id="bric---text-editor">bric - text editor</h1>
 
-  
+<p><a href="/assets/posts/2017/April/screencast-3e61e2eb61c7195ee6a14aad642d8317b0dda9560d23866d0e88587c5ac55b1f.gif">
+  <img src="/assets/posts/2017/April/screencast-3e61e2eb61c7195ee6a14aad642d8317b0dda9560d23866d0e88587c5ac55b1f.gif" alt="Screencast of bric on macOS" class="zooming" data-rjs="/assets/posts/2017/April/screencast-3e61e2eb61c7195ee6a14aad642d8317b0dda9560d23866d0e88587c5ac55b1f.gif" data-zooming-width="1844" data-zooming-height="1080" />
+</a></p>
 
-  
+<p>This past week I’ve spent taking a small text editor made by antirez, adapting it and adding new features.</p>
 
-    
-    
-    
+<p><a href="https://github.com/shnupta/bric" target="_blank">bric text editor</a></p>
 
-      
-      
+<p>The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the <em>“alternate screen buffer”</em>, which originated in <code class="highlighter-rouge">xterm</code> but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines). Switching to the alternate screen buffer the scrollback buffer is left alone, and alternate screen buffer output is not added to the scrollback buffer. When returning from alternate screen buffer, the original scrollback buffer state is restored. This is what full-screen applications like <code class="highlighter-rouge">nano</code> use.</p>
 
-    
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="tag-cloud" href="/tag/apps" title="See all posts by APPS tag"
-      style="font-size: 135%">
-        <span>APPS<small>(1)</small></span>
-      </a>
-    
+<p>The original editor <a href="https://github.com/antirez/kilo" target=" _blank">kilo</a> was written over a weekend by Salvatore Sanfilippo. You can read his <a href="http://antirez.com/news/108" target="_blank">blogpost</a> on his site.</p>
 
-  
+<p>I’ve taken the base of the kilo editor and have started to modularise it into different components and features (like syntax highlighting and git integration). So far I’ve added more in-depth syntax highlighting (needs to be fixed first though hah) and a goto function to make navigating the file easier.</p>
 
-    
-    
-    
+<p>Some of the planned features are:</p>
 
-      
-      
+<ul>
+  <li>Git integration</li>
+  <li>More syntax keyword colours</li>
+  <li>More language syntax highlighting</li>
+  <li>More shortcuts</li>
+  <li>Yank &amp; paste lines</li>
+  <li>Append to end of line</li>
+  <li>Jump to beginning of line</li>
+  <li>Soft/hard wrap lines</li>
+  <li>Auto indent</li>
+  <li>Line numbers</li>
+  <li>Config file rather than hard coded colours etc</li>
+</ul>
 
-    
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="tag-cloud" href="/tag/cs" title="See all posts by COMPUTER SCIENCE tag"
-      style="font-size: 135%">
-        <span>COMPUTER SCIENCE<small>(1)</small></span>
-      </a>
-    
+<p>I will continue to add more features and hopefully get more of the open source community involved, but for the moment I think having this little editor is definitely useful and quite cool really.</p>
 
-  
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=bric+text+editor%20-%20https://shnupta.github.io/posts/bric-text-editor%20by%20@casey__williams" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://shnupta.github.io/posts/bric-text-editor" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+            <a href="https://plus.google.com/share?url=https://shnupta.github.io/posts/bric-text-editor" title="Share on Google+" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 128 128"><path d="M40.7 55.9v16.1c0 0 15.6 0 22 0C59.2 82.5 53.8 88.2 40.7 88.2c-13.3 0-23.7-10.8-23.7-24.2s10.4-24.2 23.7-24.2c7.1 0 11.6 2.5 15.8 5.9 3.3-3.3 3.1-3.8 11.6-11.9 -7.2-6.6-16.8-10.6-27.4-10.6C18.2 23.3 0 41.5 0 64c0 22.5 18.2 40.7 40.7 40.7 33.6 0 41.8-29.3 39-48.8H40.7zM113.9 56.7V42.6h-10.1v14.1H89.4v10.1h14.5v14.5h10.1V66.8H128V56.7H113.9z"/></svg>
+            </a>
+          </div>
 
-    
-    
-    
-
-      
-      
-
-    
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="tag-cloud" href="/tag/flutter" title="See all posts by FLUTTER tag"
-      style="font-size: 135%">
-        <span>FLUTTER<small>(1)</small></span>
-      </a>
-    
-
-  
-
-    
-    
-    
-
-      
-      
-
-    
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="tag-cloud" href="/tag/general" title="See all posts by GENERAL tag"
-      style="font-size: 135%">
-        <span>GENERAL<small>(1)</small></span>
-      </a>
-    
-
-  
-
-    
-    
-    
-
-      
-      
-
-    
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="tag-cloud" href="/tag/maths" title="See all posts by MATHS tag"
-      style="font-size: 135%">
-        <span>MATHS<small>(1)</small></span>
-      </a>
-    
-
-  
-
-    
-    
-    
-
-      
-      
-
-    
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="tag-cloud" href="/tag/news" title="See all posts by NEWS tag"
-      style="font-size: 135%">
-        <span>NEWS<small>(1)</small></span>
-      </a>
-    
-
-  
-
-    
-    
-    
-
-      
-      
-
-    
-
-  
-</div>
-
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script src="https://shnupta.disqus.com/embed.js" async defer></script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+          
+        </article>
         <footer class="footer scrollappear">
   <ul class="footer-links">
     <li>
