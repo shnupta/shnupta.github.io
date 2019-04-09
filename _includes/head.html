@@ -16,6 +16,13 @@
   <meta name="twitter:title" content="{{ page.title | escape }}">
   <meta name="twitter:description" content="{{ page.description }}">
 
+  {% if site.blog_theme = "light" %}
+    <meta name="theme-color" content="#fff">
+  {% else %}
+    <meta name="theme-color" content="#121111">
+  {% endif %}
+  
+
   {% if page.thumb_image %}
     {% if page.thumb_image contains '://' %}
       <meta property="og:image" content="{{ page.thumb_image }}">
