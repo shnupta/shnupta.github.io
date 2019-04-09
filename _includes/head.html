@@ -49,11 +49,13 @@
       <link rel="apple-touch-icon" href="{% asset apple-touch-icon-light.png @path %}">
       <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
       <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="true">
+      <meta name="theme-color" content="#fff">
     {% else %}
       <link rel="icon" type="image/x-icon" href="{% asset favicon-dark.ico @path %}">
       <link rel="apple-touch-icon" href="{% asset apple-touch-icon-dark.png @path %}">
       <link rel="stylesheet" type="text/css" title="light" id="light" href="{% asset light.css @path%}">
       <link rel="stylesheet" type="text/css" title="dark" id="dark" href="{% asset dark.css @path%}" disabled="false">
+      <meta name="theme-color" content="#121111">
     {% endif %}
 
   {% else %}
