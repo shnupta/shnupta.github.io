@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "How To Get Sh*t Done"
+title: "How To Get Stuff Done"
 description: "I share with you my processes for organising my days and how I stay productive"
 tags: [productivity]
 ---
 
-{% include image.html path="posts/2019/April/get-sh*t-done/matt-ragland-853708-unsplash.jpg" path-detail="posts/2019/April/get-sh*t-done/matt-ragland-853708-unsplash.jpg" alt="Photo by Matt Ragland" %}
+{% include image.html path="posts/2019/April/get-stuff-done/matt-ragland-853708-unsplash.jpg" path-detail="posts/2019/April/get-sh*t-done/matt-ragland-853708-unsplash.jpg" alt="Photo by Matt Ragland" %}
 <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@mattragland?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Matt Ragland"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Matt Ragland</span></a>
 
 The chase for being the most productive version of yourself has quite a bit of hype surrounding it right now, and for a good reason - being productive feels great.
