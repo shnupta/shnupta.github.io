@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn install --modules-folder ./_assets/yarn
+
+PATH: 
+  /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/casey/dev/websites/shnupta.github.io/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  11.15.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, lstat '/home/casey/dev/websites/shnupta.github.io/_assets/yarn/mkdirp'
+
+npm manifest: 
+  {
+    "name": "chalk",
+    "scripts": {
+      "setup": "bin/setup",
+      "local": "bundle exec jekyll serve --drafts",
+      "publish": "bin/deploy"
+    },
+    "dependencies": {
+      "jquery": "^3.2.1",
+      "npm": "^6.0.1",
+      "retinajs": "^2.1.1",
+      "svgxuse": "^1.2.4",
+      "webfontloader": "^1.6.28",
+      "zooming": "^2.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
