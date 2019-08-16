@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Level Results 2019"
-description: "My A Level Results for 2019."
+description: "My A Level results for 2019."
 tags: [education, news]
 ---
 
