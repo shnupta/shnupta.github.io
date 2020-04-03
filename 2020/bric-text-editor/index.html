@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  <meta name="author" content="Casey Williams">
+  
+  
+  
+  
+  
+  <link rel="canonical" href="https://shnupta.github.io/2020/bric-text-editor/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           Bric Text Editor | Casey Williams
+       
+  </title>
+  <meta name="title" content="Bric Text Editor | Casey Williams">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/shnupta.github.io"
+    },
+    "articleSection" : "posts",
+    "name" : "Bric Text Editor",
+    "headline" : "Bric Text Editor",
+    "description" : "Github Repo\nThe editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the \x26ldquo;alternate screen buffer\x26rdquo;, which originated in xterm but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines).",
+    "inLanguage" : "en-gb",
+    "author" : "Casey Williams",
+    "creator" : "Casey Williams",
+    "publisher": "Casey Williams",
+    "accountablePerson" : "Casey Williams",
+    "copyrightHolder" : "Casey Williams",
+    "copyrightYear" : "2020",
+    "datePublished": "2020-04-03 12:11:40 \x2b0100 BST",
+    "dateModified" : "2020-04-03 12:11:40 \x2b0100 BST",
+    "url" : "https:\/\/shnupta.github.io\/2020\/bric-text-editor\/",
+    "wordCount" : "269",
+    "keywords" : [ "xterm","terminal","text editor", "Casey Williams"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont2 icon-adjust"></i></a>&nbsp;<a href="https://shnupta.github.io">Casey Williams</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont icon-xihuan"></i></a>&nbsp;<a href="https://shnupta.github.io">Casey Williams</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">Bric Text Editor</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://shnupta.github.io" rel="author">Casey Williams</a> 
+                <span class="post-time">
+                on <time datetime=2020-04-03 itemprop="datePublished">April 3, 2020</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://shnupta.github.io/categories/projects/"> projects </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p><a href="https://github.com/shnupta/bric">Github Repo</a></p>
+<p>The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the <em>&ldquo;alternate screen buffer&rdquo;</em>, which originated in <code>xterm</code> but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines). Switching to the alternate screen buffer the scrollback buffer is left alone, and alternate screen buffer output is not added to the scrollback buffer. When returning from alternate screen buffer, the original scrollback buffer state is restored. This is what full-screen applications like <code>nano</code> use.</p>
+<p>The original editor <a href="https://github.com/antirez/kilo">kilo</a> was written over a weekend by Salvatore Sanfilippo. You can read his <a href="http://antirez.com/news/108">blogpost</a> on his site.</p>
+<p>I&rsquo;ve taken the base of the kilo editor and have started to modularise it into different components and features (like syntax highlighting and git integration). So far I&rsquo;ve added more in-depth syntax highlighting (needs to be fixed first though hah) and a goto function to make navigating the file easier.</p>
+<p>Some of the planned features are:</p>
+<ul>
+<li>Git integration</li>
+<li>More syntax keyword colours</li>
+<li>More language syntax highlighting</li>
+<li>More shortcuts</li>
+<li>Yank &amp; paste lines</li>
+<li>Append to end of line</li>
+<li>Jump to beginning of line</li>
+<li>Soft/hard wrap lines</li>
+<li>Auto indent</li>
+<li>Line numbers</li>
+<li>Config file rather than hard coded colours etc</li>
+</ul>
+<p>I will continue to add more features and hopefully get more of the open source community involved, but for the moment I think having this little editor is definitely useful and quite cool really.</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Casey Williams </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://shnupta.github.io/2020/bric-text-editor/>https://shnupta.github.io/2020/bric-text-editor/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                MIT License
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://shnupta.github.io/tags/xterm/">
+                    #xterm</a></span>
+            
+            <span class="tag"><a href="https://shnupta.github.io/tags/terminal/">
+                    #terminal</a></span>
+            
+            <span class="tag"><a href="https://shnupta.github.io/tags/text-editor/">
+                    #text editor</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://shnupta.github.io">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2018 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont2 icon-code"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://shnupta.github.io">Casey Williams</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+     </div>
+  </body>
+</html>

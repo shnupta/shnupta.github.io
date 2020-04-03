@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Casey Williams</title>
+    <link>https://shnupta.github.io/tags/</link>
+    <description>Recent content in Tags on Casey Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 03 Apr 2020 12:11:40 +0100</lastBuildDate>
+    
+	<atom:link href="https://shnupta.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>terminal</title>
+      <link>https://shnupta.github.io/tags/terminal/</link>
+      <pubDate>Fri, 03 Apr 2020 12:11:40 +0100</pubDate>
+      
+      <guid>https://shnupta.github.io/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text editor</title>
+      <link>https://shnupta.github.io/tags/text-editor/</link>
+      <pubDate>Fri, 03 Apr 2020 12:11:40 +0100</pubDate>
+      
+      <guid>https://shnupta.github.io/tags/text-editor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xterm</title>
+      <link>https://shnupta.github.io/tags/xterm/</link>
+      <pubDate>Fri, 03 Apr 2020 12:11:40 +0100</pubDate>
+      
+      <guid>https://shnupta.github.io/tags/xterm/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

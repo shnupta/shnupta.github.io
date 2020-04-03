@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Casey Williams on Casey Williams</title>
+    <link>https://shnupta.github.io/</link>
+    <description>Recent content in Casey Williams on Casey Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://shnupta.github.io/posts/</link>
+      <pubDate>Fri, 03 Apr 2020 12:11:40 +0100</pubDate>
+      
+      <guid>https://shnupta.github.io/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://shnupta.github.io/about/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://shnupta.github.io/about/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m currently reading Computer Science at Imperial College London.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also been lucky enough to secure a scholarship from &lt;a href=&#34;https://www.sintelix.com&#34;&gt;Sintelix&lt;/a&gt; where I am currently a Development Intern.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
