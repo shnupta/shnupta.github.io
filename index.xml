@@ -5,7 +5,7 @@
     <description>Recent content in Casey Williams on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2020 12:11:40 +0100</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -20,11 +20,45 @@
     <item>
       <title>About</title>
       <link>https://caseywilliams.me/about/</link>
-      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://caseywilliams.me/about/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m currently reading Computer Science at Imperial College London.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve also been lucky enough to secure a scholarship from &lt;a href=&#34;https://www.sintelix.com&#34;&gt;Sintelix&lt;/a&gt; where I am currently a Development Intern.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve also been lucky enough to secure a scholarship from &lt;a href=&#34;https://www.sintelix.com&#34;&gt;Sintelix&lt;/a&gt; where I currently work as a Development Intern, during both term-time and summer, but mostly the latter.&lt;/p&gt;
+&lt;p&gt;I have many interests within computer science, these range from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Natural Language Processing&lt;/li&gt;
+&lt;li&gt;Computer Vision&lt;/li&gt;
+&lt;li&gt;General AI and Machine Learning&lt;/li&gt;
+&lt;li&gt;Financial Trading&lt;/li&gt;
+&lt;li&gt;Emulators&lt;/li&gt;
+&lt;li&gt;And much more!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Outside of CS, I&amp;rsquo;ve a lot of hobbies that I like to juggle with such as mountain biking and playing guitar.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m also currently learning Spanish.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://caseywilliams.me/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/projects/</guid>
+      <description>&lt;p&gt;Here is a quick showcase of some of the personal projects I&amp;rsquo;ve developed.&lt;/p&gt;
+&lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#bric&#34;&gt;bric&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#chip-emul8&#34;&gt;Chip-Emul8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bric&#34;&gt;bric&lt;/h2&gt;
+&lt;p&gt;bric is a text editor based on kilo.&lt;/p&gt;
+&lt;p&gt;bric does not depend on any library (not even curses). It uses fairly standard VT100 (and similar terminals) escape sequences to write and read to and from the terminal.&lt;/p&gt;
+&lt;p&gt;Read the blog post &lt;a href=&#34;https://caseywilliams.me/2020/bric-text-editor&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;chip-emul8&#34;&gt;Chip-Emul8&lt;/h2&gt;
+&lt;p&gt;Chip-Emul8 was the first emulator I ever wrote. It is written in C and emulated the &lt;a href=&#34;https://en.wikipedia.org/wiki/CHIP-8&#34;&gt;CHIP-8&lt;/a&gt; virtual machine from the 70s.&lt;/p&gt;
+&lt;p&gt;I actually livestreamed this however the site I did it on is no longer around so the recordings are lost. It was a lot of fun and taught me the basics of computer processors and the execution cycle etc.&lt;/p&gt;
+&lt;p&gt;I was originally inspired by &lt;a href=&#34;http://iamferris.com/&#34;&gt;Ferris&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
