@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Casey Williams</title>
-    <link>https://shnupta.github.io/posts/</link>
+    <link>https://caseywilliams.me/posts/</link>
     <description>Recent content in Posts on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 03 Apr 2020 12:11:40 +0100</lastBuildDate>
     
-	<atom:link href="https://shnupta.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://caseywilliams.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bric Text Editor</title>
-      <link>https://shnupta.github.io/2020/bric-text-editor/</link>
+      <link>https://caseywilliams.me/2020/bric-text-editor/</link>
       <pubDate>Fri, 03 Apr 2020 12:11:40 +0100</pubDate>
       
-      <guid>https://shnupta.github.io/2020/bric-text-editor/</guid>
+      <guid>https://caseywilliams.me/2020/bric-text-editor/</guid>
       <description>Github Repo
 The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the &amp;ldquo;alternate screen buffer&amp;rdquo;, which originated in xterm but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines).</description>
     </item>
