@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>big o on Casey Williams</title>
+    <link>https://caseywilliams.me/tags/big-o/</link>
+    <description>Recent content in big o on Casey Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 24 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://caseywilliams.me/tags/big-o/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Big O Notation and Algorithmic Complexity</title>
+      <link>https://caseywilliams.me/2017/big-o-notation-and-algorithmic-complexity/</link>
+      <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/2017/big-o-notation-and-algorithmic-complexity/</guid>
+      <description>After completing the first section of the coding-interview-university repository, algorithmic complexity / big o / asymptotic analysis, I’ve decided to write a quick tutorial on how it all works. So hopefully it may come in handy as a quick learning tool or reminder for myself, or even another person who comes across this post at a later date.
+Let’s begin…
+What is this all about? Big O notation and asymptotic complexity is all to do with how the number of operations an algorithm takes to complete, grows as the size of the input increases.</description>
+    </item>
+    
+  </channel>
+</rss>

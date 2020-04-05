@@ -2,9 +2,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://caseywilliams.me/2020/bric-text-editor/</loc>
+      <loc>https://caseywilliams.me/tags/arrays/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/c/</loc>
+      
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
       
       
       
@@ -14,7 +24,7 @@
     <url>
       <loc>https://caseywilliams.me/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
       
       
       
@@ -24,7 +34,17 @@
     <url>
       <loc>https://caseywilliams.me/categories/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/data-structures/</loc>
+      
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
       
       
       
@@ -34,17 +54,7 @@
     <url>
       <loc>https://caseywilliams.me/posts/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://caseywilliams.me/categories/projects/</loc>
-      
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
       
       
       
@@ -54,7 +64,97 @@
     <url>
       <loc>https://caseywilliams.me/tags/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/categories/tutorials/</loc>
+      
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/2017/what-is-a-dynamic-array-and-how-to-implement-one-in-c/</loc>
+      
+      <lastmod>2017-08-22T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/algorithms/</loc>
+      
+      <lastmod>2017-07-24T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/big-o/</loc>
+      
+      <lastmod>2017-07-24T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/2017/big-o-notation-and-algorithmic-complexity/</loc>
+      
+      <lastmod>2017-07-24T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/complexity/</loc>
+      
+      <lastmod>2017-07-24T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/categories/guides/</loc>
+      
+      <lastmod>2017-07-24T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/2017/bric-text-editor/</loc>
+      
+      <lastmod>2017-04-15T12:11:40+01:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/categories/projects/</loc>
+      
+      <lastmod>2017-04-15T12:11:40+01:00</lastmod>
       
       
       
@@ -64,7 +164,7 @@
     <url>
       <loc>https://caseywilliams.me/tags/terminal/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-04-15T12:11:40+01:00</lastmod>
       
       
       
@@ -74,7 +174,7 @@
     <url>
       <loc>https://caseywilliams.me/tags/text-editor/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-04-15T12:11:40+01:00</lastmod>
       
       
       
@@ -84,7 +184,7 @@
     <url>
       <loc>https://caseywilliams.me/tags/xterm/</loc>
       
-      <lastmod>2020-04-03T12:11:40+01:00</lastmod>
+      <lastmod>2017-04-15T12:11:40+01:00</lastmod>
       
       
       

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noodp"/>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-137603733-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137603733-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <meta name="author" content="Casey Williams">
+  <meta name="description" content="A place for me to share my projects, thoughts and experiences.">
+  <meta name="keywords" content="programming, coding, development, machine learning, AI, finance, Imperial College London, Sintelix">
+  <meta name="google-site-verification" content="LXzqxiRkBwSXRYifNgzIU_m6zvSHA6ZDD9MoIiQpP-Y" />
+  <link rel="prev" href="https://caseywilliams.me/2017/big-o-notation-and-algorithmic-complexity/" />
+  
+  <link rel="canonical" href="https://caseywilliams.me/2017/what-is-a-dynamic-array-and-how-to-implement-one-in-c/" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>
+       
+       
+           What Is a Dynamic Array and How to Implement One in C | Casey Williams
+       
+  </title>
+  <meta name="title" content="What Is a Dynamic Array and How to Implement One in C | Casey Williams">
+    
+  
+  <link rel="stylesheet" href="/font/iconfont.css">
+  <link rel="stylesheet" href="/css/main.min.css">
+
+
+  
+  
+ 
+
+<script type="application/ld+json">
+ "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "https:\/\/caseywilliams.me"
+    },
+    "articleSection" : "posts",
+    "name" : "What Is a Dynamic Array and How to Implement One in C",
+    "headline" : "What Is a Dynamic Array and How to Implement One in C",
+    "description" : "This guide has been written as a complete introduction to dynamic arrays, with comparisons against similar array types like dynamically allocated and fixed-size arrays, and also a tutorial on how to implement one in C.\n Link to the repository of code.  Prerequisites: you should have a basic understanding of pointers and some knowledge of programming in C.\nLet’s get to it!\nFirst let’s define an array. An array is a contiguous area of memory, consisting of equally sized elements, indexed by contiguous integers.",
+    "inLanguage" : "en-gb",
+    "author" : "Casey Williams",
+    "creator" : "Casey Williams",
+    "publisher": "Casey Williams",
+    "accountablePerson" : "Casey Williams",
+    "copyrightHolder" : "Casey Williams",
+    "copyrightYear" : "2017",
+    "datePublished": "2017-08-22 00:00:00 \x2b0000 UTC",
+    "dateModified" : "2017-08-22 00:00:00 \x2b0000 UTC",
+    "url" : "https:\/\/caseywilliams.me\/2017\/what-is-a-dynamic-array-and-how-to-implement-one-in-c\/",
+    "wordCount" : "1860",
+    "keywords" : [ "c","arrays","data structures", "Casey Williams"]
+}
+</script>
+
+</head>
+
+  
+
+
+  <body class="">
+    <div class="wrapper">
+        <nav class="navbar">
+    <div class="container">
+        <div class="navbar-header header-logo">
+        	<a href="javascript:void(0);" class="theme-switch"><i class="iconfont2 icon-adjust"></i></a>&nbsp;<a href="https://caseywilliams.me">Casey Williams</a>
+        </div>
+        <div class="menu navbar-right">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/projects/" title="">Projects</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+<nav class="navbar-mobile" id="nav-mobile" style="display: none">
+     <div class="container">
+        <div class="navbar-header">
+            <div>  <a href="javascript:void(0);" class="theme-switch"><i class="iconfont2 icon-adjust"></i></a>&nbsp;<a href="https://caseywilliams.me">Casey Williams</a></div>
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+     
+          <div class="menu" id="mobile-menu">
+                
+                
+                <a class="menu-item" href="/posts/" title="">Blog</a>
+                
+                <a class="menu-item" href="/categories/" title="">Categories</a>
+                
+                <a class="menu-item" href="/tags/" title="">Tags</a>
+                
+                <a class="menu-item" href="/projects/" title="">Projects</a>
+                
+                <a class="menu-item" href="/about/" title="">About</a>
+                
+        </div>
+    </div>
+</nav>
+
+    	 <main class="main">
+          <div class="container">
+      		
+<article class="post-warp" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">What Is a Dynamic Array and How to Implement One in C</h1>
+        <div class="post-meta">
+                Written by <a itemprop="name" href="https://caseywilliams.me" rel="author">Casey Williams</a> 
+                <span class="post-time">
+                on <time datetime=2017-08-22 itemprop="datePublished">August 22, 2017</time>
+                </span>
+                in
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://caseywilliams.me/categories/tutorials/"> tutorials </a>
+                        
+                </span>
+        </div>
+    </header>
+    <div class="post-content">
+        
+
+        
+
+        
+        
+     
+          
+          
+          
+
+          
+          
+          
+
+          <p>This guide has been written as a complete introduction to dynamic arrays, with comparisons against similar array types like dynamically allocated and fixed-size arrays, and also a tutorial on how to implement one in C.</p>
+<blockquote>
+<h1 id="link-to-the-repository-of-codehttpsgithubcomshnuptapractice-ctreemasterdarray"><a href="https://github.com/shnupta/practice-c/tree/master/darray">Link to the repository of code.</a></h1>
+</blockquote>
+<p><strong>Prerequisites</strong>: you should have a basic understanding of pointers and some knowledge of programming in C.</p>
+<p>Let’s get to it!</p>
+<h2 id="first-lets-define-an-array">First let’s define an array.</h2>
+<p>An array is a contiguous area of memory, consisting of equally sized elements, indexed by contiguous integers.</p>
+<p>Typically, an array has a fixed size when declared in most languages.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> my_array[<span style="color:#ae81ff">10</span>]; <span style="color:#75715e">// declares an array of integers with capacity 10
+</span></code></pre></div><p>A fixed-size array means that once the array has been declared with its size, it cannot then be changed. The standard array in C is a fixed size array. However, a fixed size array (static) can present some problems, we must provide the size of the array at compile time. There is a way round this by using dynamically-allocated arrays. Dynamically-allocated arrays can specify the size of the array in run time. Something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> <span style="color:#f92672">*</span>my_array <span style="color:#f92672">=</span> new <span style="color:#66d9ef">int</span>[size];
+</code></pre></div><p>But the problem that still resides is: what if we don’t know the maximum size of the array when we allocate it?</p>
+<p>This is where dynamic arrays come in.</p>
+<h2 id="dynamic-arrays">Dynamic Arrays</h2>
+<p>The idea of a dynamic array is to have a pointer to a dynamically-allocated array (see above), and then when the size of the array becomes bigger than what was allocated, we create a new dynamically-allocated array, with a larger size, and then reset our pointer to that. We can also call a dynamic array an automatically resizing array.</p>
+<h3 id="what-should-it-be-able-to-do">What should it be able to do?</h3>
+<p>Typically a dynamic array should be able to:</p>
+<ul>
+<li>
+<p>Get( <strong>i</strong> ): return the element at position <strong>i</strong> — O(1)</p>
+</li>
+<li>
+<p>Set( <strong>i</strong>, <strong>val</strong> ): set the element at position <strong>i</strong> to the value <strong>val</strong></p>
+</li>
+<li>
+<p>Push( <strong>val</strong> ): add <strong>val</strong> to the end of the array — typically O(1) but can differ (see later)</p>
+</li>
+<li>
+<p>Remove( <strong>i</strong> ): remove the element at position <strong>i</strong> — O(n)</p>
+</li>
+<li>
+<p>Size(  ): return the number of elements in the array</p>
+</li>
+</ul>
+<h2 id="the-implementation">The Implementation</h2>
+<p>The files we will have for the implementation of the dynamic array are:</p>
+<ul>
+<li>
+<p>darray.h — header file containing the struct definition and function declarations</p>
+</li>
+<li>
+<p>darray.c — the source code for the functions</p>
+</li>
+</ul>
+<p>Our <em>darray.h</em> file will look like <a href="https://github.com/shnupta/practice-c/blob/master/darray/darray.h">this</a>.</p>
+<p>First of all we need to declare our array structure:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">struct</span> darray {
+    <span style="color:#66d9ef">void</span> <span style="color:#f92672">**</span>items;
+    <span style="color:#66d9ef">int</span> size;
+    <span style="color:#66d9ef">int</span> capacity;
+} darray;
+</code></pre></div><p>items is our ‘dynamically-allocated’ array. size is pretty self explanatory and capacity is the maximum elements that items can hold at the current time.</p>
+<p>We are going to have 15 functions for our <em>darray</em>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_init</span>(darray <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_init_with_cap</span>(darray <span style="color:#f92672">*</span>, <span style="color:#66d9ef">int</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_destroy</span>(darray <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">darray_size</span>(darray <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">darray_capacity</span>(darray <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">darray_is_empty</span>(darray <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">void</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">darray_at</span>(darray <span style="color:#f92672">*</span>, <span style="color:#66d9ef">int</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_push</span>(darray <span style="color:#f92672">*</span>, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_insert</span>(darray <span style="color:#f92672">*</span>, <span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_prepend</span>(darray <span style="color:#f92672">*</span>, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span><span style="color:#a6e22e">darray_pop</span>(darray<span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_delete</span>(darray<span style="color:#f92672">*</span>, <span style="color:#66d9ef">int</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_remove</span>(darray<span style="color:#f92672">*</span>, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">darray_find</span>(darray<span style="color:#f92672">*</span>, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>);
+<span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_resize</span>(darray<span style="color:#f92672">*</span>, <span style="color:#66d9ef">int</span>);
+</code></pre></div><p><em>darray_init</em> will be our allocation function. Here the array will be created and the memory for it will be allocated.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_init</span>(darray <span style="color:#f92672">*</span>vec) {
+    vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">=</span> DARRAY_INIT_CAPACITY;
+    vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">=</span> malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> vec<span style="color:#f92672">-&gt;</span>capacity);
+}
+</code></pre></div><p>First of all, we set the capacity of the vector to our initialisation capacity (which in this case is 16). Then we set the size to zero as our array contains no elements and finally we use <strong>malloc()</strong> to allocate some memory for our items array. The <strong>malloc()</strong> function allocates the provided number of bytes of memory and returns a pointer to the allocated memory. Now we have some memory to play around with and use to store our data.</p>
+<p>The <em>darray_init_with_cap</em> is an optional function that I wrote to allow for a bit more freedom. You just pass in the capacity size rather than using the standard macro.</p>
+<p>Before we continue, we also need a way to clear up our <em>darray</em> when we are finished with it — we don’t want any memory leaks! Our <em>darray_destroy</em> function simply uses <strong>free()</strong> to deallocate the memory we allocated for <em>items</em> and sets the <em>size</em> and <em>capacity</em> to NULL;</p>
+<p>The next few functions in the header file are pretty self explanatory. Return the size, capacity or 1 if the size is zero. You get the idea.</p>
+<p>Now for some more interesting functions…</p>
+<p>Obviously we need to access the elements inside our array, but we must do this at O(1) runtime. This is what makes an array special.</p>
+<p>Remember our array is indexed by a range of contiguous integers so we can use this to access the element. Accessing an element is fairly straight forward. We need the memory address of where our elements start, the size of each element (in this case it’s the size of a void pointer) and the index that we want to access.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">darray_at</span>(darray <span style="color:#f92672">*</span>vec, <span style="color:#66d9ef">int</span> index) {
+    assert(index <span style="color:#f92672">&lt;</span> vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">&amp;&amp;</span> index <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> index);
+}
+</code></pre></div><p>The assert statement I’m using is just checking that the index we are trying to access actually exists in our array, if it doesn’t we don’t want to let the program continue as it could end up badly. To access the element we take the address of our array vec-&gt;items and then add to that the number of bytes until the element that we want to access. We do this by using the <strong>sizeof()</strong> function which returns the size in bytes of the argument we pass in, and we then times this by our index as that is how many bytes until our element begins. We then dereference this memory address which returns our void * element inside our array!</p>
+<p>What about adding elements? One of the simplest ways to add an element to a dynamic array is to push to the end of the array.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_push</span>(darray <span style="color:#f92672">*</span>vec, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>item) {
+    <span style="color:#66d9ef">if</span> (vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">==</span> vec<span style="color:#f92672">-&gt;</span>capacity) {
+        darray_resize(vec, vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>);
+    }
+    <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> vec<span style="color:#f92672">-&gt;</span>size) <span style="color:#f92672">=</span> item;
+    vec<span style="color:#f92672">-&gt;</span>size<span style="color:#f92672">++</span>;
+}
+</code></pre></div><p>We will get to the resizing of our array at the end of the tutorial. Here we are setting the item at the pointer location that is the index of <em>size</em> equal to the value of our pointer. Because we are using zero-based indexing, the element at position <em>size</em> is the next element at the end of our array. Finally we increment the size of the array.</p>
+<p>It’s all well and good slapping a value on the end, but sometimes we want to slot an item into the middle of the array and keep all of our other elements. Here is where inserting comes in.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_insert</span>(darray <span style="color:#f92672">*</span>vec, <span style="color:#66d9ef">int</span> index, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>item) {
+    assert(index <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> index <span style="color:#f92672">&lt;</span> vec<span style="color:#f92672">-&gt;</span>size);
+    <span style="color:#66d9ef">if</span>(vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">==</span> vec<span style="color:#f92672">-&gt;</span>capacity) {
+        darray_resize(vec, vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>);
+    }
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&gt;=</span> index; i<span style="color:#f92672">--</span>) {
+        <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> (i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)) <span style="color:#f92672">=</span> <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> i);
+    }
+    <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> index) <span style="color:#f92672">=</span> item;
+    vec<span style="color:#f92672">-&gt;</span>size<span style="color:#f92672">++</span>;
+}
+</code></pre></div><p>Once again we use the <strong>assert()</strong> statement to check the passed in <em>index</em> is valid and also check if the array needs to be resized. Before we can actually insert our value into the <em>index</em>, we need to make space for it. We cannot simply change the value at the <em>index</em> as we’d be overwriting the existing value. So what we do is loop from the last value of our array until we reach the <em>index</em> we want to insert at, and copy that value to the index that is one greater than it. We cannot loop from the <em>index</em> towards the end of the array as we would just be copying the same value across each time. Once we’ve made the space we set the value at the memory address of our <em>index</em>, like before. And again we increment the size of the array.</p>
+<p>The darray_prepend() function simply uses the darray_insert() function and passes zero as the index argument.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span><span style="color:#f92672">*</span> <span style="color:#a6e22e">darray_pop</span>(darray <span style="color:#f92672">*</span>vec) {
+    assert(vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>);
+    <span style="color:#66d9ef">if</span>(vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">&lt;=</span> vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>) {
+        darray_resize(vec, vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    }
+    <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>ret_val <span style="color:#f92672">=</span> <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> (vec<span style="color:#f92672">-&gt;</span>size<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>));
+ 
+    <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> (vec<span style="color:#f92672">-&gt;</span>size<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)) <span style="color:#f92672">=</span> NULL;
+    vec<span style="color:#f92672">-&gt;</span>size<span style="color:#f92672">--</span>;
+
+    <span style="color:#66d9ef">return</span> ret_val;
+}
+</code></pre></div><p>Popping a value is deleting the last value from our array, and returning it. At the beginning we do the normal validation check and resize check. Then we create the ret_val variable. This is a copy of the last element of our array (we need this to be able to return the element after we delete it). Then we simply set the value to be NULL at the address of the last element (which is size — 1 due to zero-based indexing). Don’t forget to decrement the <em>size</em> of our array as we’ve deleted an element.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_delete</span>(darray <span style="color:#f92672">*</span>vec, <span style="color:#66d9ef">int</span> index) {
+    assert(index <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> index <span style="color:#f92672">&lt;</span> vec<span style="color:#f92672">-&gt;</span>size);
+    <span style="color:#66d9ef">if</span>(vec<span style="color:#f92672">-&gt;</span>size <span style="color:#f92672">&lt;=</span> vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span>) {
+        <span style="color:#75715e">// half the capacity in resize
+</span><span style="color:#75715e"></span>        darray_resize(vec, vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>);
+    }
+    <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> index) <span style="color:#f92672">=</span> NULL;
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> index; i <span style="color:#f92672">&lt;</span> vec<span style="color:#f92672">-&gt;</span>size; i<span style="color:#f92672">++</span>) {
+        <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> i) <span style="color:#f92672">=</span> <span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> (i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>));
+    }
+    vec<span style="color:#f92672">-&gt;</span>size<span style="color:#f92672">--</span>;
+}
+</code></pre></div><p>Deleting an element in our array is similar to inserting. Only rather then shifting elements to the right before we insert, we shift elements left after deleting the item.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_remove</span>(darray <span style="color:#f92672">*</span>vec, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>item) {
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> vec<span style="color:#f92672">-&gt;</span>size; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> i) <span style="color:#f92672">==</span> item) {
+            darray_delete(vec, i);
+        }
+    }
+}
+</code></pre></div><p>Our remove function looks for any elements that have the value of <em>item</em>and removes them from our array using the previous function. N.B. this will delete multiple occurrences and not just the first match.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">darray_find</span>(darray <span style="color:#f92672">*</span>vec, <span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>item) {
+    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> vec<span style="color:#f92672">-&gt;</span>size; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">if</span> (<span style="color:#f92672">*</span>(vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">+</span> <span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> i) <span style="color:#f92672">==</span> item) {
+            <span style="color:#66d9ef">return</span> i;
+         }
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
+}
+</code></pre></div><p>Our find function is very similar to our remove function. However on the first occurrence of <em>item</em> it will return the index that it is at. If a match is not found, -1 is returned.</p>
+<p>Now onto the most important function of them all!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">darray_resize</span>(darray <span style="color:#f92672">*</span>vec, <span style="color:#66d9ef">int</span> new_size) {
+    assert(new_size <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>);
+    vec<span style="color:#f92672">-&gt;</span>capacity <span style="color:#f92672">=</span> new_size;
+    <span style="color:#66d9ef">void</span> <span style="color:#f92672">**</span>new_items <span style="color:#f92672">=</span> malloc(<span style="color:#66d9ef">sizeof</span>(<span style="color:#66d9ef">void</span> <span style="color:#f92672">*</span>) <span style="color:#f92672">*</span> vec<span style="color:#f92672">-&gt;</span>capacity);
+    new_items <span style="color:#f92672">=</span> vec<span style="color:#f92672">-&gt;</span>items;
+    free(vec<span style="color:#f92672">-&gt;</span>items);
+    vec<span style="color:#f92672">-&gt;</span>items <span style="color:#f92672">=</span> new_items;
+}
+</code></pre></div><p>We have called this function multiple times (when deleting, inserting). First of all we check the new size is valid. Then we change our array’s capacity property to be the new size. After we allocate memory in a similar way to how we initialised the array, this time with the new capacity. We then copy our existing elements to our newly allocated memory, afterwards freeing the previous array memory. Finally we set our array’s items collection to be the newly allocated and assigned memory.</p>
+<p>Well that’s it! I hope you found this a bit of a no-nonsense, straight to the point way of learning and got something from it. If you have any questions or need any help, feel free to drop me an email.</p>
+
+    </div>
+
+    <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>Casey Williams </span>
+                </p>
+            
+           
+             
+            <p class="copyright-item">
+                    <span>Link:</span>
+                    <a href=https://caseywilliams.me/2017/what-is-a-dynamic-array-and-how-to-implement-one-in-c/>https://caseywilliams.me/2017/what-is-a-dynamic-array-and-how-to-implement-one-in-c/</span>
+            </p>
+            
+             
+            <p class="copyright-item lincese">
+                MIT License
+            </p>
+            
+    </div>
+
+  
+    <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://caseywilliams.me/tags/c/">
+                    #c</a></span>
+            
+            <span class="tag"><a href="https://caseywilliams.me/tags/arrays/">
+                    #arrays</a></span>
+            
+            <span class="tag"><a href="https://caseywilliams.me/tags/data-structures/">
+                    #data structures</a></span>
+            
+            </section>
+        
+        <section>
+                <a href="javascript:window.history.back();">back</a></span> · 
+                <span><a href="https://caseywilliams.me">home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+        
+        <a href="https://caseywilliams.me/2017/big-o-notation-and-algorithmic-complexity/" class="prev" rel="prev" title="Big O Notation and Algorithmic Complexity"><i class="iconfont icon-left"></i>&nbsp;Big O Notation and Algorithmic Complexity</a>
+         
+        
+    </div>
+
+    <div class="post-comment">
+          
+                 
+                     <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shnupta" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                 
+          
+    </div>
+</article>
+          </div>
+		   </main>
+      <footer class="footer">
+    <div class="copyright">
+        &copy;
+        
+        <span itemprop="copyrightYear">2017 - 2020</span>
+        
+        <span class="with-love">
+    	 <i class="iconfont2 icon-code"></i> 
+         </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://caseywilliams.me">Casey Williams</a> | </span> 
+         
+
+         
+		  <span>Powered by <a href="https://gohugo.io/" target="_blank" rel="external nofollow">Hugo</a> & <a href="https://github.com/liuzc/leaveit" target="_blank" rel="external nofollow">LeaveIt</a></span> 
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+    
+  
+
+
+
+
+     </div>
+  </body>
+</html>
