@@ -17,8 +17,7 @@
       <pubDate>Sat, 15 Apr 2017 12:11:40 +0100</pubDate>
       
       <guid>https://caseywilliams.me/2017/bric-text-editor/</guid>
-      <description>Github Repo
-The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the &amp;ldquo;alternate screen buffer&amp;rdquo;, which originated in xterm but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines).</description>
+      <description>Github Repo The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the &amp;ldquo;alternate screen buffer&amp;rdquo;, which originated in xterm but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines).</description>
     </item>
     
   </channel>

@@ -18,7 +18,7 @@
       
       <guid>https://caseywilliams.me/2017/what-is-a-dynamic-array-and-how-to-implement-one-in-c/</guid>
       <description>This guide has been written as a complete introduction to dynamic arrays, with comparisons against similar array types like dynamically allocated and fixed-size arrays, and also a tutorial on how to implement one in C.
- Link to the repository of code.  Prerequisites: you should have a basic understanding of pointers and some knowledge of programming in C.
+ Link to the repository of code.   Prerequisites: you should have a basic understanding of pointers and some knowledge of programming in C.
 Let’s get to it!
 First let’s define an array. An array is a contiguous area of memory, consisting of equally sized elements, indexed by contiguous integers.</description>
     </item>
@@ -40,8 +40,7 @@ What is this all about? Big O notation and asymptotic complexity is all to do wi
       <pubDate>Sat, 15 Apr 2017 12:11:40 +0100</pubDate>
       
       <guid>https://caseywilliams.me/2017/bric-text-editor/</guid>
-      <description>Github Repo
-The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the &amp;ldquo;alternate screen buffer&amp;rdquo;, which originated in xterm but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines).</description>
+      <description>Github Repo The editor uses VT100 escpae sequences to write to the terminal to output characters and the cursor etc. It also uses the &amp;ldquo;alternate screen buffer&amp;rdquo;, which originated in xterm but is nowadays supported by most terminals. Alternate screen buffer is designed to provide exactly this functionality for full-screen terminal programs. In normal operation, output gets added to the scrollback buffer (and most terminals let the user scroll back to previous lines).</description>
     </item>
     
   </channel>

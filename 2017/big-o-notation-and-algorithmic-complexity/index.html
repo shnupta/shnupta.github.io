@@ -184,20 +184,25 @@ if (!doNotTrack) {
 <h2 id="what-is-this-all-about">What is this all about?</h2>
 <p>Big O notation and asymptotic complexity is all to do with how the number of operations an algorithm takes to complete, grows as the size of the input increases. For example, counting the number of characters in a string has a linear complexity — or O(n). This means that it takes n amount of operations to do, where n is the size of the string. It’s important to remember that Big O is not solely about the run time of a program, as there are many variables that can affect this (i.e if another program is hogging all of the memory it may take longer, or if a machine has a slower CPU). It is about the efficiency of the algorithm that is taking place.</p>
 <h2 id="why-is-it-important">Why is it important?</h2>
-<p>Algorithmic complexity may not seem that important to a programmer who is coding small command line applications that deal with small amounts of data, or who is just messing around with code. But in production software it is hugely important. To put this in to perspective: if we were to <a href="https://en.wikipedia.org/wiki/Bubble_sort">bubble sort</a> a small list of 10 integers, in the worst case scenario it would take 100 operations, as the Big O of bubble sort is O(n²) . Now in a small program this wouldn’t make much of a difference but let’s say this program now is sorting test scores of an entire school where there are 2000 students. The awful performance will quickly become apparent as it will take 4000000 operations.</p>
+<p>Algorithmic complexity may not seem that important to a programmer who is coding small command line applications that deal with small amounts of data, or who is just messing around with code. But in production software it is hugely important. To put this in to perspective: if we were to <a href="https://en.wikipedia.org/wiki/Bubble_sort" target="_blank">bubble sort</a>
+ a small list of 10 integers, in the worst case scenario it would take 100 operations, as the Big O of bubble sort is O(n²) . Now in a small program this wouldn’t make much of a difference but let’s say this program now is sorting test scores of an entire school where there are 2000 students. The awful performance will quickly become apparent as it will take 4000000 operations.</p>
 <h2 id="but-what-if-the-sort-completes-on-the-first-iteration">But what if the sort completes on the first iteration?</h2>
 <p>Now we have arrived at some more notations! The notation O() represents the worst case scenario of an algorithm. The notation for an algorithm’s best case scenario is Ω (Omega). Some operations have a constant best case scenario so it only takes 1 operation to complete (searching a hash table for example). There is also another notation, Ө (Theta). Big theta is when the worst case scenario and the best case scenario of your algorithm have the same complexity.</p>
 <h2 id="what-are-typical-complexities">What are typical complexities?</h2>
 <p><img src="https://cdn-images-1.medium.com/max/2000/0*YrvStm4mPpw7MvYw.png" alt=""></p>
-<p>I highly suggest you check out the <a href="http://bigocheatsheet.com/">original page</a> where this chart is from. It lists many different complexities for loads of data structures as well as complexities for common sorting algorithms.</p>
-<p>If you’d also like an explanation with a bit more discrete maths in it then have a look at <a href="http://www3.cs.stonybrook.edu/~algorith/video-lectures/2007/lecture2.pdf">these slides.</a></p>
+<p>I highly suggest you check out the <a href="http://bigocheatsheet.com/" target="_blank">original page</a>
+ where this chart is from. It lists many different complexities for loads of data structures as well as complexities for common sorting algorithms.</p>
+<p>If you’d also like an explanation with a bit more discrete maths in it then have a look at <a href="http://www3.cs.stonybrook.edu/~algorith/video-lectures/2007/lecture2.pdf" target="_blank">these slides.</a>
+</p>
 <p>Here are also some Top Coder tutorials to complete:</p>
 <ul>
 <li>
-<p><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/">Computational Complexity: Section 1</a></p>
+<p><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-1/" target="_blank">Computational Complexity: Section 1</a>
+</p>
 </li>
 <li>
-<p><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-2/">Computational Complexity: Section 2</a></p>
+<p><a href="https://www.topcoder.com/community/data-science/data-science-tutorials/computational-complexity-section-2/" target="_blank">Computational Complexity: Section 2</a>
+</p>
 </li>
 </ul>
 

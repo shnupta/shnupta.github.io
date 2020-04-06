@@ -18,7 +18,7 @@
       
       <guid>https://caseywilliams.me/2017/what-is-a-dynamic-array-and-how-to-implement-one-in-c/</guid>
       <description>This guide has been written as a complete introduction to dynamic arrays, with comparisons against similar array types like dynamically allocated and fixed-size arrays, and also a tutorial on how to implement one in C.
- Link to the repository of code.  Prerequisites: you should have a basic understanding of pointers and some knowledge of programming in C.
+ Link to the repository of code.   Prerequisites: you should have a basic understanding of pointers and some knowledge of programming in C.
 Let’s get to it!
 First let’s define an array. An array is a contiguous area of memory, consisting of equally sized elements, indexed by contiguous integers.</description>
     </item>
