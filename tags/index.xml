@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://caseywilliams.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>terminal</title>
+      <link>https://caseywilliams.me/tags/terminal/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tools</title>
+      <link>https://caseywilliams.me/tags/tools/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/tools/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blogging</title>
@@ -116,15 +134,6 @@
       <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://caseywilliams.me/tags/complexity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>terminal</title>
-      <link>https://caseywilliams.me/tags/terminal/</link>
-      <pubDate>Sat, 15 Apr 2017 12:11:40 +0100</pubDate>
-      
-      <guid>https://caseywilliams.me/tags/terminal/</guid>
       <description></description>
     </item>
     

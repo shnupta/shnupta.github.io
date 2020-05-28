@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tools on Casey Williams</title>
+    <link>https://caseywilliams.me/tags/tools/</link>
+    <description>Recent content in tools on Casey Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://caseywilliams.me/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Asciinema</title>
+      <link>https://caseywilliams.me/2020/asciinema/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/2020/asciinema/</guid>
+      <description>I was looking for a tool to record my terminal output so I could show some example output of programs I had written for some friends.
+After searching &amp;ldquo;record terminal output&amp;rdquo;, the first result to appear was Asciinema .
+This post is just a quick overview of what you can do with Asciinema and why I like it.
+Installation Installing Asciinema is super easy.
+If you use Homebrew:
+brew install asciinema Pip:</description>
+    </item>
+    
+  </channel>
+</rss>
