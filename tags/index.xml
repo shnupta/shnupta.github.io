@@ -6,17 +6,80 @@
     <description>Recent content in Tags on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://caseywilliams.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>go</title>
+      <link>https://caseywilliams.me/tags/go/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mpv</title>
+      <link>https://caseywilliams.me/tags/mpv/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/mpv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>https://caseywilliams.me/tags/music/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sockets</title>
+      <link>https://caseywilliams.me/tags/sockets/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/sockets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streaming</title>
+      <link>https://caseywilliams.me/tags/streaming/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/streaming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>streamlink</title>
+      <link>https://caseywilliams.me/tags/streamlink/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/streamlink/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>terminal</title>
       <link>https://caseywilliams.me/tags/terminal/</link>
-      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://caseywilliams.me/tags/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unix</title>
+      <link>https://caseywilliams.me/tags/unix/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/unix/</guid>
       <description></description>
     </item>
     

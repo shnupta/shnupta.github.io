@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://caseywilliams.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Listen to Youtube Livestreams From the Terminal</title>
+      <link>https://caseywilliams.me/2020/listen-to-youtube-livestreams-from-the-terminal/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/2020/listen-to-youtube-livestreams-from-the-terminal/</guid>
+      <description>Like many people, while working I like to have some music on in the background. Normally this is either a Spotify playlist of my own, or some Youtube livestream of jazz, lofi or another genre that is mostly instrumental.
+Also, I spend a lot of time in the terminal while working. Putting two and two together I thought it would be cool to be able to have a CLI to play the audio from different livestreams.</description>
+    </item>
     
     <item>
       <title>Asciinema</title>

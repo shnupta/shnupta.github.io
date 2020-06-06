@@ -2,19 +2,9 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     <url>
-      <loc>https://caseywilliams.me/2020/asciinema/</loc>
-      
-      <lastmod>2020-05-28T00:00:00+00:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
       <loc>https://caseywilliams.me/</loc>
       
-      <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
       
       
       
@@ -24,7 +14,7 @@
     <url>
       <loc>https://caseywilliams.me/categories/</loc>
       
-      <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
       
       
       
@@ -34,7 +24,47 @@
     <url>
       <loc>https://caseywilliams.me/categories/cool-stuff/</loc>
       
-      <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/go/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/2020/listen-to-youtube-livestreams-from-the-terminal/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/mpv/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/music/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
       
       
       
@@ -44,7 +74,37 @@
     <url>
       <loc>https://caseywilliams.me/posts/</loc>
       
-      <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/sockets/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/streaming/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/streamlink/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
       
       
       
@@ -54,7 +114,7 @@
     <url>
       <loc>https://caseywilliams.me/tags/</loc>
       
-      <lastmod>2020-05-28T00:00:00+00:00</lastmod>
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
       
       
       
@@ -63,6 +123,26 @@
   
     <url>
       <loc>https://caseywilliams.me/tags/terminal/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/tags/unix/</loc>
+      
+      <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://caseywilliams.me/2020/asciinema/</loc>
       
       <lastmod>2020-05-28T00:00:00+00:00</lastmod>
       

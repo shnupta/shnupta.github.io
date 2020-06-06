@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cool-stuff on Casey Williams</title>
-    <link>https://caseywilliams.me/categories/cool-stuff/</link>
-    <description>Recent content in cool-stuff on Casey Williams</description>
+    <title>streaming on Casey Williams</title>
+    <link>https://caseywilliams.me/tags/streaming/</link>
+    <description>Recent content in streaming on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://caseywilliams.me/categories/cool-stuff/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://caseywilliams.me/tags/streaming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,20 +19,6 @@
       <guid>https://caseywilliams.me/2020/listen-to-youtube-livestreams-from-the-terminal/</guid>
       <description>Like many people, while working I like to have some music on in the background. Normally this is either a Spotify playlist of my own, or some Youtube livestream of jazz, lofi or another genre that is mostly instrumental.
 Also, I spend a lot of time in the terminal while working. Putting two and two together I thought it would be cool to be able to have a CLI to play the audio from different livestreams.</description>
-    </item>
-    
-    <item>
-      <title>Asciinema</title>
-      <link>https://caseywilliams.me/2020/asciinema/</link>
-      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://caseywilliams.me/2020/asciinema/</guid>
-      <description>I was looking for a tool to record my terminal output so I could show some example output of programs I had written for some friends.
-After searching &amp;ldquo;record terminal output&amp;rdquo;, the first result to appear was Asciinema .
-This post is just a quick overview of what you can do with Asciinema and why I like it.
-Installation Installing Asciinema is super easy.
-If you use Homebrew:
-brew install asciinema Pip:</description>
     </item>
     
   </channel>
