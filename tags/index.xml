@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://caseywilliams.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>c</title>
+      <link>https://caseywilliams.me/tags/c/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>university</title>
+      <link>https://caseywilliams.me/tags/university/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/tags/university/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>go</title>
@@ -98,15 +116,6 @@
       <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://caseywilliams.me/tags/blogging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>c</title>
-      <link>https://caseywilliams.me/tags/c/</link>
-      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://caseywilliams.me/tags/c/</guid>
       <description></description>
     </item>
     

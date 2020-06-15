@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>updates on Casey Williams</title>
+    <link>https://caseywilliams.me/categories/updates/</link>
+    <description>Recent content in updates on Casey Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://caseywilliams.me/categories/updates/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Almost Done With First Year</title>
+      <link>https://caseywilliams.me/2020/almost-done-with-first-year/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/2020/almost-done-with-first-year/</guid>
+      <description>I&amp;rsquo;ve been pretty busy this week with my summer uni project. We are in groups of 4 and have a 3 part project to do.
+The first two parts are an emulator and assembler for the ARM11 architecture. We split ourselves into twos and each pair worked on their own part. I worked on the assembler and it was great fun. I&amp;rsquo;m also glad we split the work this way, as we ended up finishing both parts before the deadline, when you only needed to have completed the emulator.</description>
+    </item>
+    
+  </channel>
+</rss>
