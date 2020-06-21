@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://caseywilliams.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>projects</title>
+      <link>https://caseywilliams.me/categories/projects/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/categories/projects/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>updates</title>
@@ -53,15 +62,6 @@
       <pubDate>Mon, 24 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://caseywilliams.me/categories/guides/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>projects</title>
-      <link>https://caseywilliams.me/categories/projects/</link>
-      <pubDate>Sat, 15 Apr 2017 12:11:40 +0100</pubDate>
-      
-      <guid>https://caseywilliams.me/categories/projects/</guid>
       <description></description>
     </item>
     

@@ -35,9 +35,9 @@ if (!doNotTrack) {
   <meta name="description" content="A place for me to share my projects, thoughts and experiences.">
   <meta name="keywords" content="programming, coding, development, machine learning, AI, finance, Imperial College London, Sintelix">
   <meta name="google-site-verification" content="LXzqxiRkBwSXRYifNgzIU_m6zvSHA6ZDD9MoIiQpP-Y" />
-  <link rel="prev" href="https://caseywilliams.me/2020/listen-to-youtube-livestreams-from-the-terminal/" />
-  <link rel="next" href="https://caseywilliams.me/2020/creating-a-static-site-generator/" />
-  <link rel="canonical" href="https://caseywilliams.me/2020/almost-done-with-first-year/" />
+  <link rel="prev" href="https://caseywilliams.me/2020/almost-done-with-first-year/" />
+  
+  <link rel="canonical" href="https://caseywilliams.me/2020/creating-a-static-site-generator/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -48,10 +48,10 @@ if (!doNotTrack) {
   <title>
        
        
-           Almost Done With First Year | Casey Williams
+           Creating a Static Site Generator | Casey Williams
        
   </title>
-  <meta name="title" content="Almost Done With First Year | Casey Williams">
+  <meta name="title" content="Creating a Static Site Generator | Casey Williams">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -70,9 +70,9 @@ if (!doNotTrack) {
          "@id": "https:\/\/caseywilliams.me"
     },
     "articleSection" : "posts",
-    "name" : "Almost Done With First Year",
-    "headline" : "Almost Done With First Year",
-    "description" : "I\x26rsquo;ve been pretty busy this week with my summer uni project. We are in groups of 4 and have a 3 part project to do.\nThe first two parts are an emulator and assembler for the ARM11 architecture. We split ourselves into twos and each pair worked on their own part. I worked on the assembler and it was great fun. I\x26rsquo;m also glad we split the work this way, as we ended up finishing both parts before the deadline, when you only needed to have completed the emulator.",
+    "name" : "Creating a Static Site Generator",
+    "headline" : "Creating a Static Site Generator",
+    "description" : "The last few weeks I\x26rsquo;ve been completing my summer project for university. This project consisted of 3 parts: an assembler, an emulator (both for the ARM11 architecture) and then a free-choice extension project written in C.\nWe were put into groups of 4 to complete all of these tasks which was a great experience to work tightly as a group. We shared tasks in a few different ways which was insightful.",
     "inLanguage" : "en-gb",
     "author" : "Casey Williams",
     "creator" : "Casey Williams",
@@ -80,11 +80,11 @@ if (!doNotTrack) {
     "accountablePerson" : "Casey Williams",
     "copyrightHolder" : "Casey Williams",
     "copyrightYear" : "2020",
-    "datePublished": "2020-06-15 00:00:00 \x2b0000 UTC",
-    "dateModified" : "2020-06-15 00:00:00 \x2b0000 UTC",
-    "url" : "https:\/\/caseywilliams.me\/2020\/almost-done-with-first-year\/",
-    "wordCount" : "247",
-    "keywords" : [ "university","c", "Casey Williams"]
+    "datePublished": "2020-06-21 00:00:00 \x2b0000 UTC",
+    "dateModified" : "2020-06-21 00:00:00 \x2b0000 UTC",
+    "url" : "https:\/\/caseywilliams.me\/2020\/creating-a-static-site-generator\/",
+    "wordCount" : "550",
+    "keywords" : [ "c","tent","university", "Casey Williams"]
 }
 </script>
 
@@ -147,16 +147,16 @@ if (!doNotTrack) {
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Almost Done With First Year</h1>
+        <h1 class="post-title" itemprop="name headline">Creating a Static Site Generator</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://caseywilliams.me" rel="author">Casey Williams</a> 
                 <span class="post-time">
-                on <time datetime=2020-06-15 itemprop="datePublished">June 15, 2020</time>
+                on <time datetime=2020-06-21 itemprop="datePublished">June 21, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://caseywilliams.me/categories/updates/"> updates </a>
+                        <a href="https://caseywilliams.me/categories/projects/"> projects </a>
                         
                 </span>
         </div>
@@ -164,6 +164,8 @@ if (!doNotTrack) {
     <div class="post-content">
         
 
+        
+            
         
 
         
@@ -177,14 +179,24 @@ if (!doNotTrack) {
           
           
 
-          <p>I&rsquo;ve been pretty busy this week with my summer uni project. We are in groups of 4 and have a 3 part project to do.</p>
-<p>The first two parts are an emulator and assembler for the ARM11 architecture. We split ourselves into twos and each pair worked on their own part. I worked on the assembler and it was great fun. I&rsquo;m also glad we split the work this way, as we ended up finishing both parts before the deadline, when you only needed to have completed the emulator. Now we have more time for the third part - the extension!</p>
-<p>The great thing about this extension is that we can make anything we like, it just has to be in C. We didn&rsquo;t have that many ideas but we ended up going with a static site generator which we have called tent. I originally was going to make something like this by myself in Go but everyone thought it would be fun so that is what we&rsquo;ve gone with.</p>
-<p>Actually, today we are hopefully going to get the first full build working!</p>
-<p>The last week and a half of my first year at university has arrived, and although it definitely ended in short and in unusual fashion, it has been the best year of my life.</p>
-<p>Anyway, nothing particularly interesting for this week&rsquo;s post but it still feels good to write some stuff and publish it.</p>
+          <p>The last few weeks I&rsquo;ve been completing my summer project for university. This project consisted of 3 parts: an assembler, an emulator (both for the ARM11 architecture) and then a free-choice extension project written in C.</p>
+<p>We were put into groups of 4 to complete all of these tasks which was a great experience to work tightly as a group. We shared tasks in a few different ways which was insightful.</p>
+<p>We split ourselves into two groups of two at the beginning, and I was working on the assembler. Building the emulator was good fun. Just to see something that you&rsquo;ve written, convert source code into an executable file is nice.</p>
+<p>Following the completion of both the assembler and emulator we decided as a group to build a static site generator as our extension. I had originally had this idea and was going to build it in Go but I thought it would be a good opportunity to build it now, plus the rest of the group thought it would be a cool project.</p>
+<p>So we set out to build it, we called it tent&hellip;</p>
+<p>The basic requirements were to have some sort of theme mixed with content files written in markdown. We also needed inserts, a way of placing files and content into other files.</p>
+<p>By the time we started working on tent we only had around 10 days until the final deadline, and given that none of us were particularly familiar with the code behind static site generators we didn&rsquo;t have much of an idea as to how far we could get.</p>
+<p>We started by splitting the work up into a markdown to html converter, and a templating system. This was slightly naive as we didn&rsquo;t look into the amount of work required for each beforehand, we kind of assumed they carried a similar workload. This was definitley note the case. It turned out that the markdown converter was required considerably more effort and unfortunately the team member that spent a few days on this wasn&rsquo;t rewarded for their work - something we&rsquo;ve learnt from.</p>
+<p>We took some inspiration for templating and inserts from other static site generators by going with the <code>{{ insert }}</code> syntax. We then supported a few insert types: templates, snippets, configs and variables. Templates and snippets are both html style files but templates are full pages that typically have content inserted into them, whereas snippets are typically small bits of html inserted into other files. Configs and variables can be either strings or arrays of strings. Configs are set in the config.tent file at the root of a website, while variables are set in the metadata of each content file and can only be used inside that content file.</p>
+<p>We ran into many problems along the way with memory management which was expected as we were using C and handling lots of strings. However we managed to resolve all of these and we&rsquo;ve produced a tool we are all really proud of. I think I&rsquo;m going to rewrite my website and use tent to manage it!</p>
+<p>Here are some examples of content files and templates:</p>
+<p>Content file:
+<img src="/images/tent/tent-content-file.png" alt="example content file"></p>
+<p>Template file:
+<img src="/images/tent/tent-template-file.png" alt="example template file"></p>
+<p>We haven&rsquo;t published tent publically yet but when we do I&rsquo;ll link it here!</p>
 <hr>
-<p>This is the third post of my <a href="https://caseywilliams.me/2020/weekly-post-challenge/">weekly post challenge!</a>
+<p>This is the fourth post of my <a href="https://caseywilliams.me/2020/weekly-post-challenge/">weekly post challenge!</a>
 </p>
 
     </div>
@@ -200,7 +212,7 @@ if (!doNotTrack) {
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://caseywilliams.me/2020/almost-done-with-first-year/>https://caseywilliams.me/2020/almost-done-with-first-year/</span>
+                    <a href=https://caseywilliams.me/2020/creating-a-static-site-generator/>https://caseywilliams.me/2020/creating-a-static-site-generator/</span>
             </p>
             
              
@@ -216,11 +228,14 @@ if (!doNotTrack) {
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://caseywilliams.me/tags/university/">
-                    #university</a></span>
-            
             <span class="tag"><a href="https://caseywilliams.me/tags/c/">
                     #c</a></span>
+            
+            <span class="tag"><a href="https://caseywilliams.me/tags/tent/">
+                    #tent</a></span>
+            
+            <span class="tag"><a href="https://caseywilliams.me/tags/university/">
+                    #university</a></span>
             
             </section>
         
@@ -232,10 +247,8 @@ if (!doNotTrack) {
 
     <div class="post-nav">
         
-        <a href="https://caseywilliams.me/2020/listen-to-youtube-livestreams-from-the-terminal/" class="prev" rel="prev" title="Listen to Youtube Livestreams From the Terminal"><i class="iconfont icon-left"></i>&nbsp;Listen to Youtube Livestreams From the Terminal</a>
+        <a href="https://caseywilliams.me/2020/almost-done-with-first-year/" class="prev" rel="prev" title="Almost Done With First Year"><i class="iconfont icon-left"></i>&nbsp;Almost Done With First Year</a>
          
-        
-        <a href="https://caseywilliams.me/2020/creating-a-static-site-generator/" class="next" rel="next" title="Creating a Static Site Generator">Creating a Static Site Generator&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -298,8 +311,9 @@ if (!doNotTrack) {
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 

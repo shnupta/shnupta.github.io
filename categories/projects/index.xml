@@ -6,10 +6,20 @@
     <description>Recent content in projects on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 15 Apr 2017 12:11:40 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://caseywilliams.me/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating a Static Site Generator</title>
+      <link>https://caseywilliams.me/2020/creating-a-static-site-generator/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/2020/creating-a-static-site-generator/</guid>
+      <description>The last few weeks I&amp;rsquo;ve been completing my summer project for university. This project consisted of 3 parts: an assembler, an emulator (both for the ARM11 architecture) and then a free-choice extension project written in C.
+We were put into groups of 4 to complete all of these tasks which was a great experience to work tightly as a group. We shared tasks in a few different ways which was insightful.</description>
+    </item>
     
     <item>
       <title>Bric Text Editor</title>
