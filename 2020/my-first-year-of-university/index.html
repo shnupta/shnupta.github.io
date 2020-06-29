@@ -35,9 +35,9 @@ if (!doNotTrack) {
   <meta name="description" content="A place for me to share my projects, thoughts and experiences.">
   <meta name="keywords" content="programming, coding, development, machine learning, AI, finance, Imperial College London, Sintelix">
   <meta name="google-site-verification" content="LXzqxiRkBwSXRYifNgzIU_m6zvSHA6ZDD9MoIiQpP-Y" />
-  <link rel="prev" href="https://caseywilliams.me/2020/almost-done-with-first-year/" />
-  <link rel="next" href="https://caseywilliams.me/2020/my-first-year-of-university/" />
-  <link rel="canonical" href="https://caseywilliams.me/2020/creating-a-static-site-generator/" />
+  <link rel="prev" href="https://caseywilliams.me/2020/creating-a-static-site-generator/" />
+  
+  <link rel="canonical" href="https://caseywilliams.me/2020/my-first-year-of-university/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -48,10 +48,10 @@ if (!doNotTrack) {
   <title>
        
        
-           Creating a Static Site Generator | Casey Williams
+           My First Year of University | Casey Williams
        
   </title>
-  <meta name="title" content="Creating a Static Site Generator | Casey Williams">
+  <meta name="title" content="My First Year of University | Casey Williams">
     
   
   <link rel="stylesheet" href="/font/iconfont.css">
@@ -70,9 +70,9 @@ if (!doNotTrack) {
          "@id": "https:\/\/caseywilliams.me"
     },
     "articleSection" : "posts",
-    "name" : "Creating a Static Site Generator",
-    "headline" : "Creating a Static Site Generator",
-    "description" : "The last few weeks I\x26rsquo;ve been completing my summer project for university. This project consisted of 3 parts: an assembler, an emulator (both for the ARM11 architecture) and then a free-choice extension project written in C.\nWe were put into groups of 4 to complete all of these tasks which was a great experience to work tightly as a group. We shared tasks in a few different ways which was insightful.",
+    "name" : "My First Year of University",
+    "headline" : "My First Year of University",
+    "description" : "I recently finished my first year of university. It\x26rsquo;s been a lot to reflect on, and I\x26rsquo;d like to share it.\nPre-university I want to start by framing my expectations before I started in late September 2019. I had always felt that uni was \x26ldquo;over-hyped\x26rdquo;. So many times had I heard that it was \x26ldquo;the best time of your life\x26rdquo; and given my typically sceptical nature I had pretty much taken the opposite viewpoint that it was probably not going to live up to what I had heard.",
     "inLanguage" : "en-gb",
     "author" : "Casey Williams",
     "creator" : "Casey Williams",
@@ -80,11 +80,11 @@ if (!doNotTrack) {
     "accountablePerson" : "Casey Williams",
     "copyrightHolder" : "Casey Williams",
     "copyrightYear" : "2020",
-    "datePublished": "2020-06-21 00:00:00 \x2b0000 UTC",
-    "dateModified" : "2020-06-21 00:00:00 \x2b0000 UTC",
-    "url" : "https:\/\/caseywilliams.me\/2020\/creating-a-static-site-generator\/",
-    "wordCount" : "550",
-    "keywords" : [ "c","tent","university", "Casey Williams"]
+    "datePublished": "2020-06-29 00:00:00 \x2b0000 UTC",
+    "dateModified" : "2020-06-29 00:00:00 \x2b0000 UTC",
+    "url" : "https:\/\/caseywilliams.me\/2020\/my-first-year-of-university\/",
+    "wordCount" : "968",
+    "keywords" : [ "university", "Casey Williams"]
 }
 </script>
 
@@ -147,16 +147,16 @@ if (!doNotTrack) {
       		
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Creating a Static Site Generator</h1>
+        <h1 class="post-title" itemprop="name headline">My First Year of University</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://caseywilliams.me" rel="author">Casey Williams</a> 
                 <span class="post-time">
-                on <time datetime=2020-06-21 itemprop="datePublished">June 21, 2020</time>
+                on <time datetime=2020-06-29 itemprop="datePublished">June 29, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://caseywilliams.me/categories/projects/"> projects </a>
+                        <a href="https://caseywilliams.me/categories/updates/"> updates </a>
                         
                 </span>
         </div>
@@ -164,8 +164,6 @@ if (!doNotTrack) {
     <div class="post-content">
         
 
-        
-            
         
 
         
@@ -179,25 +177,28 @@ if (!doNotTrack) {
           
           
 
-          <p>The last few weeks I&rsquo;ve been completing my summer project for university. This project consisted of 3 parts: an assembler, an emulator (both for the ARM11 architecture) and then a free-choice extension project written in C.</p>
-<p>We were put into groups of 4 to complete all of these tasks which was a great experience to work tightly as a group. We shared tasks in a few different ways which was insightful.</p>
-<p>We split ourselves into two groups of two at the beginning, and I was working on the assembler. Building the assembler was good fun. Just to see something that you&rsquo;ve written, convert source code into an executable file is nice.</p>
-<p>Following the completion of both the assembler and emulator we decided as a group to build a static site generator as our extension. I had originally had this idea and was going to build it in Go but I thought it would be a good opportunity to build it now, plus the rest of the group thought it would be a cool project.</p>
-<p>So we set out to build it, we called it tent&hellip;</p>
-<p>The basic requirements were to have some sort of theme mixed with content files written in markdown. We also needed inserts, a way of placing files and content into other files.</p>
-<p>By the time we started working on tent we only had around 10 days until the final deadline, and given that none of us were particularly familiar with the code behind static site generators we didn&rsquo;t have much of an idea as to how far we could get.</p>
-<p>We started by splitting the work up into a markdown to html converter, and a templating system. This was slightly naive as we didn&rsquo;t look into the amount of work required for each beforehand, we kind of assumed they carried a similar workload. This was definitley not the case. It turned out that the markdown converter was required considerably more effort and unfortunately the team member that spent a few days on this wasn&rsquo;t rewarded for their work - something we&rsquo;ve learnt from.</p>
-<p>We took some inspiration for templating and inserts from other static site generators by going with the <code>{{ insert }}</code> syntax. We then supported a few insert types: templates, snippets, configs and variables. Templates and snippets are both html style files but templates are full pages that typically have content inserted into them, whereas snippets are typically small bits of html inserted into other files. Configs and variables can be either strings or arrays of strings. Configs are set in the config.tent file at the root of a website, while variables are set in the metadata of each content file and can only be used inside that content file.</p>
-<p>We ran into many problems along the way with memory management which was expected as we were using C and handling lots of strings. However we managed to resolve all of these and we&rsquo;ve produced a tool we are all really proud of. I think I&rsquo;m going to rewrite my website and use tent to manage it!</p>
-<p>Here are some examples of content files and templates:</p>
-<p>Content file:
-<img src="/images/tent/tent-content-file.png" alt="example content file"></p>
-<p>Template file:
-<img src="/images/tent/tent-template-file.png" alt="example template file"></p>
-<p>We haven&rsquo;t published tent publically yet but when we do I&rsquo;ll link it here!</p>
-<hr>
-<p>This is the fourth post of my <a href="https://caseywilliams.me/2020/weekly-post-challenge/">weekly post challenge!</a>
-</p>
+          <p>I recently finished my first year of university. It&rsquo;s been a lot to reflect on, and I&rsquo;d like to share it.</p>
+<h3 id="pre-university">Pre-university</h3>
+<p>I want to start by framing my expectations before I started in late September 2019. I had always felt that uni was &ldquo;over-hyped&rdquo;. So many times had I heard that it was &ldquo;the best time of your life&rdquo; and given my typically sceptical nature I had pretty much taken the opposite viewpoint that it was probably not going to live up to what I had heard.</p>
+<p>This viewpoint was also supported by the fact that I was going to Imperial, a university that focuses intensely on the sciences, and also to study Computer Science - the <em>nerdy</em> subject. In my mind were thoughts of being surrounded by socially awkward people, struggling to connect and find friends that I would relate with and enjoy spending time with. Basically, quite a negative view.</p>
+<p>How wrong I was.</p>
+<h3 id="term-1">Term 1</h3>
+<p>In fact, day 1. I had moved my things in, said goodbyes to Mum and Dad and then went to the communal area at my accommodation. As expected there was a slight awkward aura to the room whenever somebody walked in but this quickly disappeared as each person introduced themselves and everybody got chatting. Pretty quickly I met two people who I seemed to get on well with and they actually studied Computing! That was my biggest worry thrown straight out the window within hours of arriving. Looking back on this day, it was 100% the most important day of the year. If I had any advice it would be to talk to as many people as you can on day 1. I can probably say that almost every one of my friends from university I either met on day 1, or then through those friends met others.</p>
+<p>As per classic freshers tradition, the next few weeks were&hellip; eventful. These few weeks definitely solidified friendships and really set in stone how the year was going to go. Some of my funniest and fondest memories of the year happened in these first few weeks - make the most of them.</p>
+<h3 id="london">London</h3>
+<p>Moving to London was the thing I was most looking forward to. To be surrounded by endless opportunities, new places to explore, bustling streets, the rush of the tube and life in general. Your classic romantacist view of city life was exactly what I had in mind. It has been amazing. Being a student in London is fantastic. Apart from the outrageously high prices of drinks, you really can do a lot without bursting the bank.</p>
+<p>When I look back on the year I actually feel that I didn&rsquo;t take advantage of hardly a fraction of what London has to offer. Which isn&rsquo;t such a bad thing in some ways. I now know that next year I want to go and see so much more live music, visit more &ldquo;secret&rdquo; spots, rooftop bars, all sorts.</p>
+<p>There really is something about being a student in London that makes you feel like the world is your oyster.</p>
+<h3 id="imperial">Imperial</h3>
+<p>I really cannot complain about Imperial. It has been a fantastic first year. The Computing department is brilliant. Our student rep has been amazing and in my opinion I always felt like when we really wanted something to be changed, we were heard and changes were made. Now, I&rsquo;m sure not everyone feels this way. I know that the larger picture at Imperial is not of the same opinion, but from my personal point of view it has been perfect. There really are facilities for everything, societies for everything, any club you can think of. So whatever your thing is, you can do it.</p>
+<h3 id="copenhagen">Copenhagen</h3>
+<p>I feel like I should put in a special mention for my trip to Copenhagen. 8 of us made a whim decision before Christmas to book a long weekend trip to Copenhagen for late January. What a trip it was. I was constantly frozen, tipsy and laughing for the entire time. We spent most of our time exploring the city on the thousands of electric scooters, eating a lot and taking way too much advantage of happy hour at the hostal (litre of Carlsberg? 5 euros. 10 shots? 5 euros. Wow.). Also bless Imperial for Panopto.</p>
+<p>Although this trip was definitely more expensive than our typical weekend, it was probably the best time of this year. To me, it really reinforces that at university you meet people who you will make memories with, and the best memories.</p>
+<h3 id="what-next">What next?</h3>
+<p>Thinking ahead to year 2, it&rsquo;s going to be different. I won&rsquo;t be living doors down the corridor from my mates anymore, the workload is likely to increase (which seems impossible given what we already get at Imperial, but it&rsquo;s all part of the experience) and of course this pandemic has changed things. We already know that lectures will not be happening in person for first term. I&rsquo;ve chosen to look for a place and be in London anyway. I don&rsquo;t want to miss out on being there any longer.</p>
+<p>I&rsquo;m looking forward to studying more in-depth topics, trying to make the most of London this year and hopefully another trip away!</p>
+<p>If I could go back and say anything to myself pre-university, I wouldn&rsquo;t. I may have just had an extremely lucky experience. Meeting amazing people at my accommodation, living in a nice area and being able to do everything I have done. But the way my viewpoint has changed is the reason why I feel so good about university. If I felt this way beforehand then maybe the experience wouldn&rsquo;t have been the same? I don&rsquo;t know.</p>
+<p>To summarise: if you are going to uni, soak up every last drop that it has to offer. It&rsquo;s incredible.</p>
 
     </div>
 
@@ -212,7 +213,7 @@ if (!doNotTrack) {
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://caseywilliams.me/2020/creating-a-static-site-generator/>https://caseywilliams.me/2020/creating-a-static-site-generator/</span>
+                    <a href=https://caseywilliams.me/2020/my-first-year-of-university/>https://caseywilliams.me/2020/my-first-year-of-university/</span>
             </p>
             
              
@@ -228,12 +229,6 @@ if (!doNotTrack) {
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://caseywilliams.me/tags/c/">
-                    #c</a></span>
-            
-            <span class="tag"><a href="https://caseywilliams.me/tags/tent/">
-                    #tent</a></span>
-            
             <span class="tag"><a href="https://caseywilliams.me/tags/university/">
                     #university</a></span>
             
@@ -247,10 +242,8 @@ if (!doNotTrack) {
 
     <div class="post-nav">
         
-        <a href="https://caseywilliams.me/2020/almost-done-with-first-year/" class="prev" rel="prev" title="Almost Done With First Year"><i class="iconfont icon-left"></i>&nbsp;Almost Done With First Year</a>
+        <a href="https://caseywilliams.me/2020/creating-a-static-site-generator/" class="prev" rel="prev" title="Creating a Static Site Generator"><i class="iconfont icon-left"></i>&nbsp;Creating a Static Site Generator</a>
          
-        
-        <a href="https://caseywilliams.me/2020/my-first-year-of-university/" class="next" rel="next" title="My First Year of University">My First Year of University&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -313,9 +306,8 @@ if (!doNotTrack) {
 
 
     
-     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/js/vendor_gallery.min.js" async="" ></script>
+    
+    <script src="/js/vendor_no_gallery.min.js" async=""></script>
     
   
 

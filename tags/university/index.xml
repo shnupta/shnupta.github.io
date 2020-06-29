@@ -6,10 +6,20 @@
     <description>Recent content in university on Casey Williams</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://caseywilliams.me/tags/university/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My First Year of University</title>
+      <link>https://caseywilliams.me/2020/my-first-year-of-university/</link>
+      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/2020/my-first-year-of-university/</guid>
+      <description>I recently finished my first year of university. It&amp;rsquo;s been a lot to reflect on, and I&amp;rsquo;d like to share it.
+Pre-university I want to start by framing my expectations before I started in late September 2019. I had always felt that uni was &amp;ldquo;over-hyped&amp;rdquo;. So many times had I heard that it was &amp;ldquo;the best time of your life&amp;rdquo; and given my typically sceptical nature I had pretty much taken the opposite viewpoint that it was probably not going to live up to what I had heard.</description>
+    </item>
     
     <item>
       <title>Creating a Static Site Generator</title>
