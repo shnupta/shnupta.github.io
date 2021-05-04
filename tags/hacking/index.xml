@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hacking on Casey Williams</title>
+    <link>https://caseywilliams.me/tags/hacking/</link>
+    <description>Recent content in hacking on Casey Williams</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Tue, 04 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://caseywilliams.me/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hacking For Free Red Bull</title>
+      <link>https://caseywilliams.me/2021/hacking-for-free-red-bull/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://caseywilliams.me/2021/hacking-for-free-red-bull/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
