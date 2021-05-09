@@ -71,7 +71,7 @@ if (!doNotTrack) {
     "articleSection" : "posts",
     "name" : "Hacking For Free Red Bull",
     "headline" : "Hacking For Free Red Bull",
-    "description" : "",
+    "description" : "I\u0026rsquo;ve been getting this Red Bull ad on about every 9 out of 10 YouTube videos recently. So I decided to check it out. Heading to the site you\u0026rsquo;ll find a \u0026lsquo;study puzzle\u0026rsquo; which awaits you. The puzzle consists of connecting all the dots together, without using the same dot. There are 10 rounds, with each puzzle increasing in difficulty. After a little bit of grinding out the game, my friend Jules managed to top the leaderboard with a lovely score of 1731 (I only managed to reach 6th place).",
     "inLanguage" : "en-gb",
     "author" : "Casey Williams",
     "creator" : "Casey Williams",
@@ -82,7 +82,7 @@ if (!doNotTrack) {
     "datePublished": "2021-05-04 00:00:00 \u002b0000 UTC",
     "dateModified" : "2021-05-04 00:00:00 \u002b0000 UTC",
     "url" : "https:\/\/caseywilliams.me\/2021\/hacking-for-free-red-bull\/",
-    "wordCount" : "0",
+    "wordCount" : "676",
     "keywords" : [ "hacking", "Casey Williams"]
 }
 </script>
@@ -155,7 +155,7 @@ if (!doNotTrack) {
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://caseywilliams.me/categories/cool-stuff/"> Cool stuff </a>
+                        <a href="https://caseywilliams.me/categories/cool-stuff/"> cool-stuff </a>
                         
                 </span>
         </div>
@@ -163,6 +163,8 @@ if (!doNotTrack) {
     <div class="post-content">
         
 
+        
+            
         
 
         
@@ -176,7 +178,42 @@ if (!doNotTrack) {
           
           
 
-          
+          <p>I&rsquo;ve been getting this Red Bull ad on about every 9 out of 10 YouTube videos recently.
+<img src="/images/redbullhacking/redbulladd.png" alt=""></p>
+<p>So I decided to check it out. Heading to the <a href="https://redbull.co.uk/exams" target="_blank">site</a>
+ you&rsquo;ll find a &lsquo;study puzzle&rsquo; which awaits you. The puzzle consists of connecting all the dots together, without using the same dot. There are 10 rounds, with each puzzle increasing in difficulty. After a little bit of grinding out the game, my friend Jules managed to top the leaderboard with a lovely score of <strong>1731</strong> (I only managed to reach 6th place). We thought, wouldn&rsquo;t it be cool to write a little path finding algorithm and control the browser using <a href="https://www.selenium.dev/" target="_blank">Selenium</a>
+ to solve the puzzles as quickly as possible?</p>
+<p><img src="/images/redbullhacking/puzzle.png" alt=""></p>
+<p>The next day I started off by going back through my graphs and algorithms notes from last year. The problem is known as the <a href="https://en.wikipedia.org/wiki/Hamiltonian_path" target="_blank">Hamiltonian path problem</a>
+. I wrote out the solution in Python to the problem and then started to look at the site, to see if it would be possible, and if so how, to interact with the game via Selenium.</p>
+<p>Inspecting the page I found that the points were in the DOM of the page, which looked hopeful. However, I&rsquo;m not that well-versed with Selenium and wondered if there would be an easier way to beating the puzzle - maybe I could access some value which was used to submit my score to the leaderboard and alter it before it was sent? So that&rsquo;s what I set about looking for.</p>
+<p>I wondered round the source until I found the games JavaScript file, then copied it and put it into <a href="https://jsnice.org" target="_blank">jsnice.org</a>
+ to go searching some more. The game was submitting the score to an api endpoint with a few different requests in order to generate some ids which were used to identify the current &lsquo;game&rsquo; (which I&rsquo;m assuming is the current week, the leaderboard resets every week), and also the &lsquo;run&rsquo; which was your attempt at the puzzle.</p>
+<p>Then, monitoring the network traffic in the developer tab of Chrome I looked for all traffic to &lsquo;/api*&rsquo;. I found that when you initially load the page a request was made to an endpoint which registered your new run and inside the response was an id. Allowing the game to timeout then caused another request to a leaderboard endpoint. I noted the run id and then took a look at what the leaderboard endpoint gave you. Here is a snippet of the response which is actually Jules' entry!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;data&#34;</span>:[
+    {
+	<span style="color:#f92672">&#34;attributes&#34;</span>:{
+            <span style="color:#f92672">&#34;finished_at&#34;</span>:<span style="color:#e6db74">&#34;2021-05-03T20:12:07Z&#34;</span>,
+            <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;992a0348-91ac-4249-91d1-011ad53ce047&#34;</span>,
+            <span style="color:#f92672">&#34;name&#34;</span>:<span style="color:#e6db74">&#34;Icy Morning&#34;</span>,
+            <span style="color:#f92672">&#34;position&#34;</span>:<span style="color:#ae81ff">1</span>,
+            <span style="color:#f92672">&#34;score&#34;</span>:<span style="color:#ae81ff">1731</span>,
+            <span style="color:#f92672">&#34;yours&#34;</span>:<span style="color:#66d9ef">false</span>
+	},
+         <span style="color:#f92672">&#34;id&#34;</span>:<span style="color:#e6db74">&#34;992a0348-91ac-4249-91d1-011ad53ce047&#34;</span>,
+	 <span style="color:#f92672">&#34;links&#34;</span>:{
+            <span style="color:#f92672">&#34;self&#34;</span>:<span style="color:#e6db74">&#34;https://rb-prjct-crtns-gamebackend-eu.herokuapp.com/leaderboard_entries/992a0348-91ac-4249-91d1-011ad53ce047&#34;</span>
+	 }
+    }
+    ]
+}
+</code></pre></div><p>Playing around with the request actually changed the position returned for my own score, but didn&rsquo;t seem to affect the leaderboard when playing again. This endpoint was only used to generate the little leaderboard preview once you had finished the game, no submitting of scores was done here. Moving on&hellip;</p>
+<p>Upon pressing the submit button a request is made to another endpoint where a payload is passed in. Lucky for me, this payload contained my score! The url was made up of the game id and run id which could both be found from the initial runs request. Lovely. Now time to try and post a request of my own.</p>
+<p>I refreshed the page and copied down the new run id without pressing the start button. Simply using curl and copying some of the request headers, I sent a post request to the correct endpoint with my ids and a score of 2000 (thinking that was the maximum as there were 10 rounds of 20 seconds each with Jules scoring 1731 while rarely spending more than 4 seconds per round). And sure enough, after pressing start and letting the game timeout, the leaderboard displayed with me at the top, score 2000. Awesome.</p>
+<p>But was 2000 really the maximum? Of course it wasn&rsquo;t, why not really put myself at the top with a lovely score of 123456789. Even better. Now, let&rsquo;s just hope I still get those 2 cans of Red Bull.</p>
+<p><img src="/images/redbullhacking/leaderboard.png" alt=""></p>
+
     </div>
 
     <div class="post-copyright">
@@ -283,8 +320,9 @@ if (!doNotTrack) {
 
 
     
-    
-    <script src="/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/js/vendor_gallery.min.js" async="" ></script>
     
   
 
