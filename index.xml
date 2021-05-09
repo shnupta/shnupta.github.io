@@ -66,15 +66,27 @@
       <description>&lt;p&gt;Here is a quick showcase of some of the personal projects I&amp;rsquo;ve developed.&lt;/p&gt;
 &lt;h2 id=&#34;contents&#34;&gt;Contents&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#seemyfeels&#34;&gt;SeeMyFeels&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#wacc&#34;&gt;WACC&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#tent&#34;&gt;tent&lt;/a&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#bric&#34;&gt;bric&lt;/a&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#chip-emul8&#34;&gt;Chip-Emul8&lt;/a&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#tent&#34;&gt;tent&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#wacc&#34;&gt;WACC&lt;/a&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;seemyfeels&#34;&gt;SeeMyFeels&lt;/h2&gt;
+&lt;p&gt;In March 2021 we competed in the DoCSoc IC Hello World hackathon. It was my first hackathon ever and I had a great time competing with everyone. We stayed up for a full 30 hours working on SeeMyFeels, a generative art project where you feed in some audio and a unique piece of digital art is generated using features from a Tensorflow model. &lt;a href=&#34;https://github.com/shnupta/SeeMyFeels&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id=&#34;wacc&#34;&gt;WACC&lt;/h2&gt;
+&lt;p&gt;For our spring term project we were tasked with writing a compiler from scratch for a basic language called WACC. We decided to write the project in C++ (while at the time we all had very little to no experience with it) in order to practice for summer internships.&lt;/p&gt;
+&lt;p&gt;We used ANTLR4 as the parser and lexer and then designed and coded the intermediate representations and code generation as well as implement optimisations such as register allocation by graph colouring, constant folding, side-affecting expressions and classes.&lt;/p&gt;
+&lt;p&gt;This was one of the projects I&amp;rsquo;ve had the most fun doing so far, I learnt so much about C++ and its different features as well as finally creating a compiler after so many years of &amp;ldquo;just finding them interesting&amp;rdquo;.&lt;/p&gt;
+&lt;h2 id=&#34;tent&#34;&gt;tent&lt;/h2&gt;
+&lt;p&gt;tent is a simple static site generator written in C. It was our extension for the first year C project at Imperial. Check it out on &lt;a href=&#34;https://github.com/julesdehon/tent&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;
+.&lt;/p&gt;
 &lt;h2 id=&#34;bric&#34;&gt;bric&lt;/h2&gt;
 &lt;p&gt;bric is a text editor based on kilo.&lt;/p&gt;
 &lt;p&gt;bric does not depend on any library (not even curses). It uses fairly standard VT100 (and similar terminals) escape sequences to write and read to and from the terminal.&lt;/p&gt;
@@ -85,16 +97,6 @@
  virtual machine from the 70s.&lt;/p&gt;
 &lt;p&gt;I actually livestreamed this however the site I did it on is no longer around so the recordings are lost. It was a lot of fun and taught me the basics of computer processors and the execution cycle etc.&lt;/p&gt;
 &lt;p&gt;I was originally inspired by &lt;a href=&#34;http://iamferris.com/&#34; target=&#34;_blank&#34;&gt;Ferris&lt;/a&gt;
-.&lt;/p&gt;
-&lt;h2 id=&#34;tent&#34;&gt;tent&lt;/h2&gt;
-&lt;p&gt;tent is a simple static site generator written in C. It was our extension for the first year C project at Imperial. Check it out on &lt;a href=&#34;https://github.com/julesdehon/tent&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;
-.&lt;/p&gt;
-&lt;h2 id=&#34;wacc&#34;&gt;WACC&lt;/h2&gt;
-&lt;p&gt;For our spring term project we were tasked with writing a compiler from scratch for a basic language called WACC. We decided to write the project in C++ (while at the time we all had very little to no experience with it) in order to practice for summer internships.&lt;/p&gt;
-&lt;p&gt;We used ANTLR4 as the parser and lexer and then designed and coded the intermediate representations and code generation as well as implement optimisations such as register allocation by graph colouring, constant folding, side-affecting expressions and classes.&lt;/p&gt;
-&lt;p&gt;This was one of the projects I&amp;rsquo;ve had the most fun doing so far, I learnt so much about C++ and its different features as well as finally creating a compiler after so many years of &amp;ldquo;just finding them interesting&amp;rdquo;.&lt;/p&gt;
-&lt;h2 id=&#34;seemyfeels&#34;&gt;SeeMyFeels&lt;/h2&gt;
-&lt;p&gt;In March 2021 we competed in the DoCSoc IC Hello World hackathon. It was my first hackathon ever and I had a great time competing with everyone. We stayed up for a full 30 hours working on SeeMyFeels, a generative art project where you feed in some audio and a unique piece of digital art is generated using features from a Tensorflow model. &lt;a href=&#34;https://github.com/shnupta/SeeMyFeels&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;
 .&lt;/p&gt;
 </description>
     </item>
